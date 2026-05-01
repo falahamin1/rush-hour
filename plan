@@ -1,0 +1,28 @@
+Now I have a clear picture of the project. The key pattern is: objects in the environment are convex polytopes (represented via V-rep or H-rep), actions are polytope operations (affine maps, intersections), and goals involve containment/coverage checking. PPL handles the exact arithmetic.
+
+Here are the strongest candidates, roughly ordered by fit:
+
+1. Rush Hour (already in your plan — excellent choice)
+Vehicles are axis-aligned rectangles (4-constraint H-rep). Sliding a car = affine_image. Goal = red car's polytope contained in the exit strip polytope. Clean action masking via intersection emptiness.
+
+2. Sokoban
+Boxes are unit squares (4 constraints). Player pushing a box = translation (affine_image by ±1). Goal = box polytope intersects target polytope. Variable number of boxes → variable-size set → DeepSets is a natural fit. State is a set of polytopes for boxes + walls.
+
+3. 2D Bin Packing / Rectangle Packing
+A classic OR benchmark now widely used in RL (e.g., for learning heuristics). Items are rectangles, container is a polytope, actions are placements (translations). Feasibility = empty pairwise intersections + containment in the bin. Scales naturally to irregular convex pieces.
+
+4. Tetris (placement-only / Blokus variant)
+Avoid the falling-block dynamics and frame it as: given a set of tetromino-shaped polytopes (or their convex hulls), choose placements to maximize board coverage without overlap. The variable number of remaining pieces makes DeepSets appealing. Each piece is a small polytope, the placed set grows.
+
+5. Polygon Covering / Art Gallery Problem
+Given a target polygon (non-convex, decomposed into convex pieces), place a set of guard polytopes to maximize coverage. The reward is the area of union(guards) ∩ target. Closer to a combinatorial optimization RL benchmark but very natural in your polytope framework.
+
+6. Safe RL with Polytopic Safe Sets
+This is a growing area: at each timestep, the safe region is a polytope (computed from CBFs or reachability). The agent observes the H-rep of the safe set and must choose actions that keep the state inside it. Your H-rep DeepSets architecture maps directly. This connects your work to Safety Gym-style benchmarks.
+
+7. Convex Hull Assembly / Polygon Dissection
+Given a target convex polygon, assemble it from a scrambled set of triangular pieces. Each action rotates/translates a triangle. The reward is intersection(assembled, target) / area(target) — exactly your tangram reward structure, but with random or procedurally generated targets, making it a proper generalization benchmark.
+
+Best next step: Sokoban or Bin Packing are probably the most immediately publishable, since they're widely recognized RL benchmarks and the polytope representation gives you a novel angle (exact collision checking, permutation-invariant policies over variable-sized piece sets) that doesn't exist in standard grid-based implementations.
+
+Rush Hour (already planned) is the sharpest fit since the 1D sliding constraint makes action masking trivial and the puzzle difficulty scales cleanly.
