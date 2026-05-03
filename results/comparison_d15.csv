@@ -1,0 +1,5 @@
+difficulty,puzzle_idx,board_str,method,mean_reward,std_reward,solve_rate,train_episodes,train_seconds
+15,0,BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo,hrep,-3.0833,0.0000,0.0000,2500,21351.2
+15,0,BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo,vrep,10.1015,0.0000,1.0000,2500,20971.1
+15,0,BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo,gnn,-3.0863,0.0000,0.0000,2500,24171.0
+15,1,BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo,hrep,-2.9000,0.0000,0.0000,2500,20039.3
