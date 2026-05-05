@@ -20,6 +20,8 @@ METHODS=(hrep vrep gnn)
 PUZZLES=(0 1 2)
 DIFFICULTIES=(10 12 15)
 
+mkdir -p "${WORK_DIR}/logs"
+
 submitted=0
 for D in "${DIFFICULTIES[@]}"; do
     ep="${EPISODES[$D]}"
