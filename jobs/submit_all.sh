@@ -65,7 +65,7 @@ python3 train_single.py \
 EOF
 
             echo "[SUBMITTED] d${D} p${P} ${M}  (${ep} ep, wall=${wt})"
-            ((submitted++))
+            submitted=$((submitted + 1))
         done
     done
 done
