@@ -2,3 +2,456 @@ usage: conda [-h] [--no-plugins] [-V] COMMAND ...
 conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'verify', 'token', 'pack', 'env', 'server', 'repo')
 usage: conda [-h] [--no-plugins] [-V] COMMAND ...
 conda: error: argument COMMAND: invalid choice: 'deactivate' (choose from 'clean', 'compare', 'config', 'create', 'info', 'init', 'install', 'list', 'notices', 'package', 'remove', 'uninstall', 'rename', 'run', 'search', 'update', 'upgrade', 'build', 'content-trust', 'convert', 'debug', 'develop', 'doctor', 'index', 'inspect', 'metapackage', 'render', 'skeleton', 'server', 'repo', 'pack', 'env', 'verify', 'token')
+
+=================================================================
+Difficulty: 15 moves  |  Training: 2500 ep  |  Eval: 50 ep  |  Puzzles: 3
+=================================================================
+Loading puzzles from rush.txt (scanning file) ...
+  Puzzle 1: BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+  Puzzle 2: BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo
+  Puzzle 3: BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+
+Progress: 0/9 combos already done
+
+─────────────────────────────────────────────────────────────────
+  puzzle 1/3  |  method=hrep  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[H-rep] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[H-rep] ep=    0  recent=-2.95  best=-inf
+  *** NEW BEST H-rep (avg=-3.04) ep=2 ***
+  *** NEW BEST H-rep (avg=-3.04) ep=40 ***
+  *** NEW BEST H-rep (avg=-3.02) ep=41 ***
+  *** NEW BEST H-rep (avg=-3.01) ep=42 ***
+  *** NEW BEST H-rep (avg=-3.00) ep=46 ***
+[H-rep] ep=  100  recent=-3.09  best=-3.00
+[H-rep] ep=  200  recent=-3.08  best=-3.00
+  *** NEW BEST H-rep (avg=-3.00) ep=219 ***
+  *** NEW BEST H-rep (avg=-2.99) ep=220 ***
+  *** NEW BEST H-rep (avg=-2.99) ep=223 ***
+  *** NEW BEST H-rep (avg=-2.98) ep=225 ***
+  *** NEW BEST H-rep (avg=-2.98) ep=234 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=235 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=248 ***
+  *** NEW BEST H-rep (avg=-2.96) ep=249 ***
+[H-rep] ep=  300  recent=-3.05  best=-2.96
+[H-rep] ep=  400  recent=-3.06  best=-2.96
+[H-rep] ep=  500  recent=-3.06  best=-2.96
+[H-rep] ep=  600  recent=-3.04  best=-2.96
+[H-rep] ep=  700  recent=-2.99  best=-2.96
+[H-rep] ep=  800  recent=-3.02  best=-2.96
+[H-rep] ep=  900  recent=-3.03  best=-2.96
+[H-rep] ep= 1000  recent=-3.04  best=-2.96
+  *** NEW BEST H-rep (avg=-2.82) ep=1059 ***
+  *** NEW BEST H-rep (avg=-2.59) ep=1060 ***
+[H-rep] ep= 1100  recent=-3.03  best=-2.59
+[H-rep] ep= 1200  recent=-3.01  best=-2.59
+[H-rep] ep= 1300  recent=-3.01  best=-2.59
+[H-rep] ep= 1400  recent=-3.04  best=-2.59
+[H-rep] ep= 1500  recent=-3.02  best=-2.59
+[H-rep] ep= 1600  recent=-3.01  best=-2.59
+[H-rep] ep= 1700  recent=-3.02  best=-2.59
+[H-rep] ep= 1800  recent=-3.03  best=-2.59
+[H-rep] ep= 1900  recent=-3.02  best=-2.59
+[H-rep] ep= 2000  recent=-3.03  best=-2.59
+[H-rep] ep= 2100  recent=-3.02  best=-2.59
+[H-rep] ep= 2200  recent=-3.02  best=-2.59
+[H-rep] ep= 2300  recent=-3.01  best=-2.59
+[H-rep] ep= 2400  recent=-3.03  best=-2.59
+
+Evaluating hrep on puzzle 1 ...
+  solve_rate=0.0%  reward=-3.08±0.00  time=355.9 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 1/3  |  method=vrep  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[V-rep] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[V-rep] ep=    0  recent=-2.95  best=-inf
+  *** NEW BEST V-rep (avg=-3.04) ep=2 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=12 ***
+  *** NEW BEST V-rep (avg=-3.00) ep=13 ***
+  *** NEW BEST V-rep (avg=-3.00) ep=34 ***
+  *** NEW BEST V-rep (avg=-2.99) ep=35 ***
+[V-rep] ep=  100  recent=-3.08  best=-2.99
+  *** NEW BEST V-rep (avg=-2.98) ep=159 ***
+  *** NEW BEST V-rep (avg=-2.93) ep=160 ***
+  *** NEW BEST V-rep (avg=-2.93) ep=161 ***
+  *** NEW BEST V-rep (avg=-2.92) ep=162 ***
+[V-rep] ep=  200  recent=-2.95  best=-2.92
+  *** NEW BEST V-rep (avg=-2.92) ep=217 ***
+  *** NEW BEST V-rep (avg=-2.92) ep=223 ***
+  *** NEW BEST V-rep (avg=-2.91) ep=224 ***
+[V-rep] ep=  300  recent=-2.96  best=-2.91
+[V-rep] ep=  400  recent=-3.06  best=-2.91
+[V-rep] ep=  500  recent=-3.00  best=-2.91
+[V-rep] ep=  600  recent=-3.02  best=-2.91
+[V-rep] ep=  700  recent=-3.04  best=-2.91
+[V-rep] ep=  800  recent=-2.99  best=-2.91
+[V-rep] ep=  900  recent=-3.03  best=-2.91
+[V-rep] ep= 1000  recent=-2.98  best=-2.91
+[V-rep] ep= 1100  recent=-2.96  best=-2.91
+[V-rep] ep= 1200  recent=-3.00  best=-2.91
+[V-rep] ep= 1300  recent=-3.02  best=-2.91
+[V-rep] ep= 1400  recent=-2.95  best=-2.91
+[V-rep] ep= 1500  recent=-3.05  best=-2.91
+  *** NEW BEST V-rep (avg=-2.83) ep=1517 ***
+  *** NEW BEST V-rep (avg=-2.80) ep=1518 ***
+  *** NEW BEST V-rep (avg=-2.79) ep=1519 ***
+[V-rep] ep= 1600  recent=-3.07  best=-2.79
+[V-rep] ep= 1700  recent=-3.02  best=-2.79
+[V-rep] ep= 1800  recent=-3.08  best=-2.79
+  *** NEW BEST V-rep (avg=-2.61) ep=1808 ***
+  *** NEW BEST V-rep (avg=-2.60) ep=1809 ***
+  *** NEW BEST V-rep (avg=-2.09) ep=1854 ***
+  *** NEW BEST V-rep (avg=-1.86) ep=1855 ***
+  *** NEW BEST V-rep (avg=-0.36) ep=1860 ***
+  *** NEW BEST V-rep (avg=0.23) ep=1866 ***
+  *** NEW BEST V-rep (avg=0.46) ep=1867 ***
+  *** NEW BEST V-rep (avg=1.37) ep=1872 ***
+  *** NEW BEST V-rep (avg=3.32) ep=1873 ***
+  *** NEW BEST V-rep (avg=4.88) ep=1874 ***
+  *** NEW BEST V-rep (avg=8.46) ep=1875 ***
+  *** NEW BEST V-rep (avg=8.54) ep=1876 ***
+  *** NEW BEST V-rep (avg=8.89) ep=1878 ***
+  *** NEW BEST V-rep (avg=9.36) ep=1881 ***
+  *** NEW BEST V-rep (avg=9.84) ep=1882 ***
+  *** NEW BEST V-rep (avg=9.91) ep=1884 ***
+  *** NEW BEST V-rep (avg=9.93) ep=1885 ***
+  *** NEW BEST V-rep (avg=9.93) ep=1886 ***
+  *** NEW BEST V-rep (avg=9.95) ep=1890 ***
+  *** NEW BEST V-rep (avg=9.95) ep=1894 ***
+  *** NEW BEST V-rep (avg=9.96) ep=1900 ***
+[V-rep] ep= 1900  recent=9.95  best=9.96
+  *** NEW BEST V-rep (avg=9.97) ep=1917 ***
+  *** NEW BEST V-rep (avg=10.02) ep=1942 ***
+  *** NEW BEST V-rep (avg=10.04) ep=1944 ***
+  *** NEW BEST V-rep (avg=10.05) ep=1945 ***
+  *** NEW BEST V-rep (avg=10.05) ep=1955 ***
+  *** NEW BEST V-rep (avg=10.08) ep=1958 ***
+  *** NEW BEST V-rep (avg=10.09) ep=1959 ***
+  *** NEW BEST V-rep (avg=10.09) ep=1960 ***
+  *** NEW BEST V-rep (avg=10.10) ep=1964 ***
+  *** NEW BEST V-rep (avg=10.10) ep=1979 ***
+[V-rep] ep= 2000  recent=10.08  best=10.10
+[V-rep] ep= 2100  recent=10.08  best=10.10
+[V-rep] ep= 2200  recent=2.88  best=10.10
+[V-rep] ep= 2300  recent=9.57  best=10.10
+[V-rep] ep= 2400  recent=9.86  best=10.10
+
+Evaluating vrep on puzzle 1 ...
+  solve_rate=100.0%  reward=10.10±0.00  time=349.5 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 1/3  |  method=gnn  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[GNN] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[GNN]   ep=    0  recent=-3.00  best=-inf
+  *** NEW BEST GNN (avg=-3.03) ep=2 ***
+  *** NEW BEST GNN (avg=-3.01) ep=92 ***
+[GNN]   ep=  100  recent=-3.07  best=-3.01
+[GNN]   ep=  200  recent=-3.05  best=-3.01
+[GNN]   ep=  300  recent=-3.07  best=-3.01
+[GNN]   ep=  400  recent=-3.07  best=-3.01
+[GNN]   ep=  500  recent=-3.07  best=-3.01
+[GNN]   ep=  600  recent=-3.08  best=-3.01
+[GNN]   ep=  700  recent=-3.05  best=-3.01
+[GNN]   ep=  800  recent=-3.06  best=-3.01
+[GNN]   ep=  900  recent=-3.06  best=-3.01
+[GNN]   ep= 1000  recent=-3.04  best=-3.01
+[GNN]   ep= 1100  recent=-3.05  best=-3.01
+[GNN]   ep= 1200  recent=-3.10  best=-3.01
+[GNN]   ep= 1300  recent=-3.02  best=-3.01
+[GNN]   ep= 1400  recent=-3.04  best=-3.01
+[GNN]   ep= 1500  recent=-3.07  best=-3.01
+[GNN]   ep= 1600  recent=-3.06  best=-3.01
+[GNN]   ep= 1700  recent=-3.05  best=-3.01
+[GNN]   ep= 1800  recent=-3.03  best=-3.01
+[GNN]   ep= 1900  recent=-3.07  best=-3.01
+[GNN]   ep= 2000  recent=-3.06  best=-3.01
+[GNN]   ep= 2100  recent=-3.07  best=-3.01
+[GNN]   ep= 2200  recent=-3.00  best=-3.01
+[GNN]   ep= 2300  recent=-3.05  best=-3.01
+[GNN]   ep= 2400  recent=-3.04  best=-3.01
+
+Evaluating gnn on puzzle 1 ...
+  solve_rate=0.0%  reward=-3.09±0.00  time=402.8 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 2/3  |  method=hrep  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[H-rep] device=cpu  board=BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo
+[H-rep] ep=    0  recent=-2.99  best=-inf
+  *** NEW BEST H-rep (avg=-3.03) ep=2 ***
+  *** NEW BEST H-rep (avg=-3.02) ep=3 ***
+  *** NEW BEST H-rep (avg=-3.01) ep=4 ***
+  *** NEW BEST H-rep (avg=-3.01) ep=9 ***
+  *** NEW BEST H-rep (avg=-3.00) ep=18 ***
+  *** NEW BEST H-rep (avg=-2.99) ep=19 ***
+  *** NEW BEST H-rep (avg=-2.98) ep=26 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=27 ***
+  *** NEW BEST H-rep (avg=-2.95) ep=28 ***
+  *** NEW BEST H-rep (avg=-2.94) ep=29 ***
+[H-rep] ep=  100  recent=-3.02  best=-2.94
+[H-rep] ep=  200  recent=-3.03  best=-2.94
+[H-rep] ep=  300  recent=-3.06  best=-2.94
+[H-rep] ep=  400  recent=-3.06  best=-2.94
+[H-rep] ep=  500  recent=-3.05  best=-2.94
+[H-rep] ep=  600  recent=-3.05  best=-2.94
+[H-rep] ep=  700  recent=-3.05  best=-2.94
+[H-rep] ep=  800  recent=-3.03  best=-2.94
+[H-rep] ep=  900  recent=-3.04  best=-2.94
+[H-rep] ep= 1000  recent=-3.04  best=-2.94
+[H-rep] ep= 1100  recent=-3.04  best=-2.94
+[H-rep] ep= 1200  recent=-3.03  best=-2.94
+[H-rep] ep= 1300  recent=-3.05  best=-2.94
+[H-rep] ep= 1400  recent=-3.02  best=-2.94
+[H-rep] ep= 1500  recent=-3.03  best=-2.94
+[H-rep] ep= 1600  recent=-3.02  best=-2.94
+[H-rep] ep= 1700  recent=-3.06  best=-2.94
+[H-rep] ep= 1800  recent=-3.00  best=-2.94
+[H-rep] ep= 1900  recent=-3.02  best=-2.94
+[H-rep] ep= 2000  recent=-2.96  best=-2.94
+[H-rep] ep= 2100  recent=-3.00  best=-2.94
+[H-rep] ep= 2200  recent=-3.00  best=-2.94
+[H-rep] ep= 2300  recent=-3.01  best=-2.94
+[H-rep] ep= 2400  recent=-3.02  best=-2.94
+
+Evaluating hrep on puzzle 2 ...
+  solve_rate=0.0%  reward=-2.90±0.00  time=334.0 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 2/3  |  method=vrep  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[V-rep] device=cpu  board=BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo
+[V-rep] ep=    0  recent=-2.93  best=-inf
+  *** NEW BEST V-rep (avg=-3.00) ep=2 ***
+  *** NEW BEST V-rep (avg=-2.99) ep=4 ***
+  *** NEW BEST V-rep (avg=-2.99) ep=5 ***
+[V-rep] ep=  100  recent=-3.05  best=-2.99
+[V-rep] ep=  200  recent=-3.02  best=-2.99
+[V-rep] ep=  300  recent=-3.03  best=-2.99
+[V-rep] ep=  400  recent=-3.04  best=-2.99
+[V-rep] ep=  500  recent=-3.09  best=-2.99
+[V-rep] ep=  600  recent=-3.03  best=-2.99
+[V-rep] ep=  700  recent=-3.04  best=-2.99
+  *** NEW BEST V-rep (avg=-2.80) ep=792 ***
+  *** NEW BEST V-rep (avg=-2.79) ep=793 ***
+  *** NEW BEST V-rep (avg=-2.77) ep=794 ***
+[V-rep] ep=  800  recent=-1.95  best=-2.77
+  *** NEW BEST V-rep (avg=-2.56) ep=813 ***
+  *** NEW BEST V-rep (avg=-1.91) ep=814 ***
+  *** NEW BEST V-rep (avg=-1.66) ep=815 ***
+  *** NEW BEST V-rep (avg=-0.95) ep=817 ***
+  *** NEW BEST V-rep (avg=0.15) ep=818 ***
+  *** NEW BEST V-rep (avg=1.64) ep=819 ***
+  *** NEW BEST V-rep (avg=2.85) ep=821 ***
+  *** NEW BEST V-rep (avg=6.76) ep=822 ***
+  *** NEW BEST V-rep (avg=7.77) ep=823 ***
+  *** NEW BEST V-rep (avg=8.55) ep=824 ***
+  *** NEW BEST V-rep (avg=9.48) ep=825 ***
+  *** NEW BEST V-rep (avg=9.74) ep=826 ***
+  *** NEW BEST V-rep (avg=9.88) ep=827 ***
+  *** NEW BEST V-rep (avg=9.97) ep=828 ***
+  *** NEW BEST V-rep (avg=10.05) ep=829 ***
+  *** NEW BEST V-rep (avg=10.09) ep=830 ***
+  *** NEW BEST V-rep (avg=10.10) ep=831 ***
+  *** NEW BEST V-rep (avg=10.12) ep=832 ***
+  *** NEW BEST V-rep (avg=10.13) ep=833 ***
+  *** NEW BEST V-rep (avg=10.13) ep=834 ***
+  *** NEW BEST V-rep (avg=10.14) ep=836 ***
+  *** NEW BEST V-rep (avg=10.14) ep=837 ***
+  *** NEW BEST V-rep (avg=10.15) ep=838 ***
+  *** NEW BEST V-rep (avg=10.15) ep=840 ***
+[V-rep] ep=  900  recent=10.07  best=10.15
+[V-rep] ep= 1000  recent=10.07  best=10.15
+[V-rep] ep= 1100  recent=10.11  best=10.15
+[V-rep] ep= 1200  recent=-2.97  best=10.15
+[V-rep] ep= 1300  recent=9.65  best=10.15
+[V-rep] ep= 1400  recent=-0.82  best=10.15
+[V-rep] ep= 1500  recent=10.11  best=10.15
+[V-rep] ep= 1600  recent=10.06  best=10.15
+[V-rep] ep= 1700  recent=10.03  best=10.15
+[V-rep] ep= 1800  recent=-3.05  best=10.15
+[V-rep] ep= 1900  recent=-3.05  best=10.15
+[V-rep] ep= 2000  recent=-3.03  best=10.15
+[V-rep] ep= 2100  recent=-3.05  best=10.15
+[V-rep] ep= 2200  recent=-3.05  best=10.15
+[V-rep] ep= 2300  recent=-3.03  best=10.15
+[V-rep] ep= 2400  recent=-3.05  best=10.15
+
+Evaluating vrep on puzzle 2 ...
+  solve_rate=100.0%  reward=10.16±0.00  time=360.7 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 2/3  |  method=gnn  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[GNN] device=cpu  board=BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo
+[GNN]   ep=    0  recent=-2.98  best=-inf
+  *** NEW BEST GNN (avg=-3.01) ep=2 ***
+  *** NEW BEST GNN (avg=-3.00) ep=3 ***
+  *** NEW BEST GNN (avg=-3.00) ep=4 ***
+  *** NEW BEST GNN (avg=-2.99) ep=19 ***
+  *** NEW BEST GNN (avg=-2.99) ep=43 ***
+[GNN]   ep=  100  recent=-3.04  best=-2.99
+[GNN]   ep=  200  recent=-3.03  best=-2.99
+[GNN]   ep=  300  recent=-3.01  best=-2.99
+[GNN]   ep=  400  recent=-3.02  best=-2.99
+[GNN]   ep=  500  recent=-3.03  best=-2.99
+[GNN]   ep=  600  recent=-3.04  best=-2.99
+[GNN]   ep=  700  recent=-3.01  best=-2.99
+[GNN]   ep=  800  recent=-3.08  best=-2.99
+[GNN]   ep=  900  recent=-3.02  best=-2.99
+[GNN]   ep= 1000  recent=-3.02  best=-2.99
+[GNN]   ep= 1100  recent=-3.02  best=-2.99
+[GNN]   ep= 1200  recent=-3.05  best=-2.99
+[GNN]   ep= 1300  recent=-3.03  best=-2.99
+[GNN]   ep= 1400  recent=-3.03  best=-2.99
+[GNN]   ep= 1500  recent=-2.98  best=-2.99
+[GNN]   ep= 1600  recent=-3.02  best=-2.99
+[GNN]   ep= 1700  recent=-3.03  best=-2.99
+[GNN]   ep= 1800  recent=-3.02  best=-2.99
+[GNN]   ep= 1900  recent=-3.00  best=-2.99
+[GNN]   ep= 2000  recent=-3.04  best=-2.99
+[GNN]   ep= 2100  recent=-3.04  best=-2.99
+[GNN]   ep= 2200  recent=-3.06  best=-2.99
+[GNN]   ep= 2300  recent=-3.05  best=-2.99
+[GNN]   ep= 2400  recent=-3.03  best=-2.99
+
+Evaluating gnn on puzzle 2 ...
+  solve_rate=0.0%  reward=-2.90±0.00  time=403.2 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 3/3  |  method=hrep  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[H-rep] device=cpu  board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[H-rep] ep=    0  recent=-3.14  best=-inf
+  *** NEW BEST H-rep (avg=-3.16) ep=2 ***
+  *** NEW BEST H-rep (avg=-3.16) ep=5 ***
+  *** NEW BEST H-rep (avg=-3.15) ep=6 ***
+  *** NEW BEST H-rep (avg=-3.15) ep=7 ***
+  *** NEW BEST H-rep (avg=-3.14) ep=8 ***
+  *** NEW BEST H-rep (avg=-3.13) ep=29 ***
+  *** NEW BEST H-rep (avg=-3.12) ep=52 ***
+  *** NEW BEST H-rep (avg=-3.11) ep=57 ***
+  *** NEW BEST H-rep (avg=-3.10) ep=58 ***
+  *** NEW BEST H-rep (avg=-3.09) ep=60 ***
+  *** NEW BEST H-rep (avg=-3.08) ep=61 ***
+  *** NEW BEST H-rep (avg=-3.07) ep=65 ***
+[H-rep] ep=  100  recent=-3.10  best=-3.07
+[H-rep] ep=  200  recent=-3.14  best=-3.07
+  *** NEW BEST H-rep (avg=-3.07) ep=240 ***
+[H-rep] ep=  300  recent=-3.10  best=-3.07
+[H-rep] ep=  400  recent=-3.18  best=-3.07
+[H-rep] ep=  500  recent=-3.12  best=-3.07
+[H-rep] ep=  600  recent=-3.14  best=-3.07
+[H-rep] ep=  700  recent=-3.18  best=-3.07
+[H-rep] ep=  800  recent=-3.15  best=-3.07
+[H-rep] ep=  900  recent=-3.13  best=-3.07
+[H-rep] ep= 1000  recent=-3.14  best=-3.07
+[H-rep] ep= 1100  recent=-3.18  best=-3.07
+[H-rep] ep= 1200  recent=-3.11  best=-3.07
+[H-rep] ep= 1300  recent=-3.14  best=-3.07
+[H-rep] ep= 1400  recent=-3.17  best=-3.07
+[H-rep] ep= 1500  recent=-3.14  best=-3.07
+[H-rep] ep= 1600  recent=-3.12  best=-3.07
+[H-rep] ep= 1700  recent=-3.19  best=-3.07
+[H-rep] ep= 1800  recent=-3.14  best=-3.07
+[H-rep] ep= 1900  recent=-3.14  best=-3.07
+[H-rep] ep= 2000  recent=-3.15  best=-3.07
+[H-rep] ep= 2100  recent=-3.13  best=-3.07
+[H-rep] ep= 2200  recent=-3.14  best=-3.07
+[H-rep] ep= 2300  recent=-3.17  best=-3.07
+[H-rep] ep= 2400  recent=-3.17  best=-3.07
+
+Evaluating hrep on puzzle 3 ...
+  solve_rate=0.0%  reward=-3.17±0.00  time=349.1 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 3/3  |  method=vrep  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[V-rep] device=cpu  board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[V-rep] ep=    0  recent=-3.16  best=-inf
+  *** NEW BEST V-rep (avg=-3.13) ep=2 ***
+  *** NEW BEST V-rep (avg=-3.12) ep=43 ***
+  *** NEW BEST V-rep (avg=-3.12) ep=44 ***
+  *** NEW BEST V-rep (avg=-3.12) ep=55 ***
+  *** NEW BEST V-rep (avg=-3.10) ep=56 ***
+  *** NEW BEST V-rep (avg=-3.09) ep=58 ***
+[V-rep] ep=  100  recent=-3.12  best=-3.09
+[V-rep] ep=  200  recent=-3.13  best=-3.09
+[V-rep] ep=  300  recent=-3.16  best=-3.09
+  *** NEW BEST V-rep (avg=-3.08) ep=322 ***
+[V-rep] ep=  400  recent=-3.15  best=-3.08
+[V-rep] ep=  500  recent=-3.18  best=-3.08
+[V-rep] ep=  600  recent=-3.15  best=-3.08
+[V-rep] ep=  700  recent=-3.12  best=-3.08
+[V-rep] ep=  800  recent=-3.20  best=-3.08
+[V-rep] ep=  900  recent=-3.16  best=-3.08
+[V-rep] ep= 1000  recent=-3.15  best=-3.08
+[V-rep] ep= 1100  recent=-3.17  best=-3.08
+[V-rep] ep= 1200  recent=-3.13  best=-3.08
+[V-rep] ep= 1300  recent=-3.15  best=-3.08
+[V-rep] ep= 1400  recent=-3.16  best=-3.08
+[V-rep] ep= 1500  recent=-3.14  best=-3.08
+[V-rep] ep= 1600  recent=-3.16  best=-3.08
+[V-rep] ep= 1700  recent=-3.09  best=-3.08
+[V-rep] ep= 1800  recent=-3.13  best=-3.08
+[V-rep] ep= 1900  recent=-3.13  best=-3.08
+[V-rep] ep= 2000  recent=-3.18  best=-3.08
+[V-rep] ep= 2100  recent=-3.13  best=-3.08
+[V-rep] ep= 2200  recent=-3.17  best=-3.08
+[V-rep] ep= 2300  recent=-3.12  best=-3.08
+[V-rep] ep= 2400  recent=-3.13  best=-3.08
+
+Evaluating vrep on puzzle 3 ...
+  solve_rate=0.0%  reward=-3.17±0.00  time=350.3 min
+
+─────────────────────────────────────────────────────────────────
+  puzzle 3/3  |  method=gnn  |  episodes=2500
+─────────────────────────────────────────────────────────────────
+[GNN] device=cpu  board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[GNN]   ep=    0  recent=-3.10  best=-inf
+  *** NEW BEST GNN (avg=-3.15) ep=2 ***
+  *** NEW BEST GNN (avg=-3.15) ep=5 ***
+  *** NEW BEST GNN (avg=-3.14) ep=19 ***
+  *** NEW BEST GNN (avg=-3.12) ep=25 ***
+  *** NEW BEST GNN (avg=-3.11) ep=26 ***
+  *** NEW BEST GNN (avg=-3.11) ep=96 ***
+  *** NEW BEST GNN (avg=-3.10) ep=98 ***
+  *** NEW BEST GNN (avg=-3.10) ep=99 ***
+[GNN]   ep=  100  recent=-3.11  best=-3.10
+[GNN]   ep=  200  recent=-3.13  best=-3.10
+[GNN]   ep=  300  recent=-3.12  best=-3.10
+[GNN]   ep=  400  recent=-3.14  best=-3.10
+[GNN]   ep=  500  recent=-3.21  best=-3.10
+[GNN]   ep=  600  recent=-3.17  best=-3.10
+[GNN]   ep=  700  recent=-3.12  best=-3.10
+[GNN]   ep=  800  recent=-3.14  best=-3.10
+[GNN]   ep=  900  recent=-3.14  best=-3.10
+[GNN]   ep= 1000  recent=-3.14  best=-3.10
+[GNN]   ep= 1100  recent=-3.19  best=-3.10
+[GNN]   ep= 1200  recent=-3.16  best=-3.10
+[GNN]   ep= 1300  recent=-3.13  best=-3.10
+[GNN]   ep= 1400  recent=-3.16  best=-3.10
+[GNN]   ep= 1500  recent=-3.15  best=-3.10
+[GNN]   ep= 1600  recent=-3.17  best=-3.10
+[GNN]   ep= 1700  recent=-3.16  best=-3.10
+[GNN]   ep= 1800  recent=-3.15  best=-3.10
+[GNN]   ep= 1900  recent=-3.13  best=-3.10
+[GNN]   ep= 2000  recent=-3.14  best=-3.10
+[GNN]   ep= 2100  recent=-3.10  best=-3.10
+[GNN]   ep= 2200  recent=-3.11  best=-3.10
+[GNN]   ep= 2300  recent=-3.13  best=-3.10
+[GNN]   ep= 2400  recent=-3.15  best=-3.10
+
+Evaluating gnn on puzzle 3 ...
+  solve_rate=0.0%  reward=-3.17±0.00  time=417.2 min
+
+=================================================================
+All combos done. Generating plots ...
+  plot → /projects/amfa5003/rush-hour/results/d15_puzzle1.png
+  plot → /projects/amfa5003/rush-hour/results/d15_puzzle2.png
+  plot → /projects/amfa5003/rush-hour/results/d15_puzzle3.png
+  summary plot → /projects/amfa5003/rush-hour/results/d15_summary.png
+
+CSV  → /projects/amfa5003/rush-hour/results/comparison_d15.csv
+Plots → /projects/amfa5003/rush-hour/results/

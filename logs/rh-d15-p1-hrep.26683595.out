@@ -1,0 +1,19 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"anaconda"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "anaconda"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+/var/spool/slurmd/job26683595/slurm_script: line 15: conda: command not found
+/var/spool/slurmd/job26683595/slurm_script: line 15: /etc/profile.d/conda.sh: No such file or directory
+/var/spool/slurmd/job26683595/slurm_script: line 16: conda: command not found
+Traceback (most recent call last):
+  File "train_single.py", line 15, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'
