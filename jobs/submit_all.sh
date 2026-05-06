@@ -49,7 +49,10 @@ for D in "${DIFFICULTIES[@]}"; do
 #SBATCH --output=${WORK_DIR}/logs/${job_name}.%j.out
 #SBATCH --qos=normal
 
-source /projects/amfa5003/software/anaconda/etc/profile.d/conda.sh
+module purge
+module load anaconda/2023.09
+
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate amfa-custom-env
 
 mkdir -p "${WORK_DIR}/logs"
