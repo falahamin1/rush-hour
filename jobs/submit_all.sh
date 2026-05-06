@@ -52,7 +52,7 @@ for D in "${DIFFICULTIES[@]}"; do
 module purge
 module load anaconda/2023.09
 
-source "$(conda info --base)/etc/profile.d/conda.sh"
+source "\$(conda info --base)/etc/profile.d/conda.sh"
 conda activate amfa-custom-env
 
 mkdir -p "${WORK_DIR}/logs"
