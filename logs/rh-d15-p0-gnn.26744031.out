@@ -1,0 +1,49 @@
+[train_single] difficulty=15  puzzle_idx=0  method=gnn  episodes=2500
+[train_single] board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[GNN] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[GNN]   ep=    0  recent=-3.03  best=-inf
+  *** NEW BEST GNN (avg=-3.05) ep=2 ***
+  *** NEW BEST GNN (avg=-3.03) ep=16 ***
+  *** NEW BEST GNN (avg=-3.03) ep=30 ***
+  *** NEW BEST GNN (avg=-3.03) ep=42 ***
+[GNN]   ep=  100  recent=-3.07  best=-3.03
+[GNN]   ep=  200  recent=-3.04  best=-3.03
+  *** NEW BEST GNN (avg=-3.02) ep=276 ***
+[GNN]   ep=  300  recent=-3.04  best=-3.02
+[GNN]   ep=  400  recent=-3.07  best=-3.02
+[GNN]   ep=  500  recent=-3.02  best=-3.02
+  *** NEW BEST GNN (avg=-3.02) ep=501 ***
+  *** NEW BEST GNN (avg=-3.01) ep=512 ***
+  *** NEW BEST GNN (avg=-3.01) ep=513 ***
+  *** NEW BEST GNN (avg=-3.00) ep=514 ***
+  *** NEW BEST GNN (avg=-3.00) ep=520 ***
+  *** NEW BEST GNN (avg=-2.99) ep=527 ***
+  *** NEW BEST GNN (avg=-2.99) ep=528 ***
+  *** NEW BEST GNN (avg=-2.98) ep=536 ***
+  *** NEW BEST GNN (avg=-2.98) ep=537 ***
+  *** NEW BEST GNN (avg=-2.97) ep=549 ***
+  *** NEW BEST GNN (avg=-2.96) ep=550 ***
+  *** NEW BEST GNN (avg=-2.96) ep=552 ***
+[GNN]   ep=  600  recent=-3.07  best=-2.96
+[GNN]   ep=  700  recent=-3.07  best=-2.96
+[GNN]   ep=  800  recent=-3.09  best=-2.96
+[GNN]   ep=  900  recent=-3.06  best=-2.96
+[GNN]   ep= 1000  recent=-3.06  best=-2.96
+[GNN]   ep= 1100  recent=-3.04  best=-2.96
+[GNN]   ep= 1200  recent=-3.09  best=-2.96
+[GNN]   ep= 1300  recent=-3.06  best=-2.96
+[GNN]   ep= 1400  recent=-3.06  best=-2.96
+[GNN]   ep= 1500  recent=-3.05  best=-2.96
+[GNN]   ep= 1600  recent=-3.06  best=-2.96
+[GNN]   ep= 1700  recent=-3.03  best=-2.96
+[GNN]   ep= 1800  recent=-3.08  best=-2.96
+[GNN]   ep= 1900  recent=-3.06  best=-2.96
+[GNN]   ep= 2000  recent=-3.02  best=-2.96
+[GNN]   ep= 2100  recent=-3.06  best=-2.96
+[GNN]   ep= 2200  recent=-3.08  best=-2.96
+[GNN]   ep= 2300  recent=-3.01  best=-2.96
+[GNN]   ep= 2400  recent=-3.04  best=-2.96
+
+[train_single] Training done in 557.7 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p0_gnn.pth

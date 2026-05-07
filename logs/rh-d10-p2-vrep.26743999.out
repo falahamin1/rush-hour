@@ -1,0 +1,52 @@
+[train_single] difficulty=10  puzzle_idx=2  method=vrep  episodes=750
+[train_single] board=oooBBoGCCIJoGAAIJoooHIDDooHEEKooFFoK
+[V-rep] device=cpu  board=oooBBoGCCIJoGAAIJoooHIDDooHEEKooFFoK
+[V-rep] ep=    0  recent=-2.89  best=-inf
+  *** NEW BEST V-rep (avg=-1.05) ep=2 ***
+  *** NEW BEST V-rep (avg=-0.43) ep=5 ***
+  *** NEW BEST V-rep (avg=0.46) ep=6 ***
+  *** NEW BEST V-rep (avg=1.61) ep=7 ***
+  *** NEW BEST V-rep (avg=2.35) ep=9 ***
+  *** NEW BEST V-rep (avg=3.99) ep=11 ***
+  *** NEW BEST V-rep (avg=5.49) ep=12 ***
+  *** NEW BEST V-rep (avg=5.74) ep=18 ***
+  *** NEW BEST V-rep (avg=8.36) ep=19 ***
+  *** NEW BEST V-rep (avg=9.32) ep=20 ***
+  *** NEW BEST V-rep (avg=9.85) ep=22 ***
+  *** NEW BEST V-rep (avg=9.97) ep=23 ***
+  *** NEW BEST V-rep (avg=10.07) ep=24 ***
+  *** NEW BEST V-rep (avg=10.10) ep=25 ***
+  *** NEW BEST V-rep (avg=10.17) ep=26 ***
+  *** NEW BEST V-rep (avg=10.22) ep=27 ***
+  *** NEW BEST V-rep (avg=10.22) ep=28 ***
+  *** NEW BEST V-rep (avg=10.24) ep=29 ***
+  *** NEW BEST V-rep (avg=10.26) ep=34 ***
+  *** NEW BEST V-rep (avg=10.26) ep=36 ***
+  *** NEW BEST V-rep (avg=10.27) ep=49 ***
+  *** NEW BEST V-rep (avg=10.28) ep=50 ***
+  *** NEW BEST V-rep (avg=10.28) ep=51 ***
+  *** NEW BEST V-rep (avg=10.29) ep=52 ***
+  *** NEW BEST V-rep (avg=10.29) ep=57 ***
+  *** NEW BEST V-rep (avg=10.30) ep=64 ***
+  *** NEW BEST V-rep (avg=10.30) ep=74 ***
+  *** NEW BEST V-rep (avg=10.30) ep=76 ***
+  *** NEW BEST V-rep (avg=10.30) ep=77 ***
+  *** NEW BEST V-rep (avg=10.31) ep=78 ***
+  *** NEW BEST V-rep (avg=10.31) ep=89 ***
+[V-rep] ep=  100  recent=10.30  best=10.31
+  *** NEW BEST V-rep (avg=10.31) ep=120 ***
+  *** NEW BEST V-rep (avg=10.31) ep=122 ***
+  *** NEW BEST V-rep (avg=10.31) ep=135 ***
+  *** NEW BEST V-rep (avg=10.31) ep=173 ***
+  *** NEW BEST V-rep (avg=10.31) ep=183 ***
+  *** NEW BEST V-rep (avg=10.31) ep=190 ***
+[V-rep] ep=  200  recent=9.82  best=10.31
+[V-rep] ep=  300  recent=-2.90  best=10.31
+[V-rep] ep=  400  recent=10.14  best=10.31
+[V-rep] ep=  500  recent=10.24  best=10.31
+[V-rep] ep=  600  recent=-2.80  best=10.31
+[V-rep] ep=  700  recent=10.23  best=10.31
+
+[train_single] Training done in 176.8 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.31±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p2_vrep.pth

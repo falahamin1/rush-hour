@@ -1,0 +1,38 @@
+[train_single] difficulty=15  puzzle_idx=1  method=gnn  episodes=2500
+[train_single] board=BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo
+[GNN] device=cpu  board=BBHooKFoHoJKFAAoJLoGCCoLoGoIDDEEoIoo
+[GNN]   ep=    0  recent=-2.98  best=-inf
+  *** NEW BEST GNN (avg=-3.02) ep=2 ***
+  *** NEW BEST GNN (avg=-3.01) ep=4 ***
+  *** NEW BEST GNN (avg=-2.99) ep=23 ***
+  *** NEW BEST GNN (avg=-2.99) ep=24 ***
+  *** NEW BEST GNN (avg=-2.97) ep=29 ***
+  *** NEW BEST GNN (avg=-2.96) ep=30 ***
+[GNN]   ep=  100  recent=-3.02  best=-2.96
+[GNN]   ep=  200  recent=-3.02  best=-2.96
+[GNN]   ep=  300  recent=-3.06  best=-2.96
+[GNN]   ep=  400  recent=-3.04  best=-2.96
+[GNN]   ep=  500  recent=-3.03  best=-2.96
+[GNN]   ep=  600  recent=-3.03  best=-2.96
+[GNN]   ep=  700  recent=-3.04  best=-2.96
+[GNN]   ep=  800  recent=-3.03  best=-2.96
+[GNN]   ep=  900  recent=-3.03  best=-2.96
+[GNN]   ep= 1000  recent=-3.01  best=-2.96
+[GNN]   ep= 1100  recent=-3.02  best=-2.96
+[GNN]   ep= 1200  recent=-3.00  best=-2.96
+[GNN]   ep= 1300  recent=-3.04  best=-2.96
+[GNN]   ep= 1400  recent=-3.03  best=-2.96
+[GNN]   ep= 1500  recent=-3.03  best=-2.96
+[GNN]   ep= 1600  recent=-3.04  best=-2.96
+[GNN]   ep= 1700  recent=-3.04  best=-2.96
+[GNN]   ep= 1800  recent=-3.02  best=-2.96
+[GNN]   ep= 1900  recent=-3.04  best=-2.96
+[GNN]   ep= 2000  recent=-3.04  best=-2.96
+[GNN]   ep= 2100  recent=-3.04  best=-2.96
+[GNN]   ep= 2200  recent=-3.04  best=-2.96
+[GNN]   ep= 2300  recent=-3.02  best=-2.96
+[GNN]   ep= 2400  recent=-3.00  best=-2.96
+
+[train_single] Training done in 560.1 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.90±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p1_gnn.pth

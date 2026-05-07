@@ -1,0 +1,45 @@
+[train_single] difficulty=12  puzzle_idx=2  method=hrep  episodes=1200
+[train_single] board=ooBBoxGHooKoGHAAKLoDDJoLooIJEEFFIooo
+[H-rep] device=cpu  board=ooBBoxGHooKoGHAAKLoDDJoLooIJEEFFIooo
+  *** NEW BEST H-rep (avg=9.01) ep=0 ***
+[H-rep] ep=    0  recent=9.29  best=9.01
+  *** NEW BEST H-rep (avg=10.11) ep=1 ***
+  *** NEW BEST H-rep (avg=10.24) ep=6 ***
+  *** NEW BEST H-rep (avg=10.33) ep=7 ***
+  *** NEW BEST H-rep (avg=10.35) ep=8 ***
+  *** NEW BEST H-rep (avg=10.36) ep=9 ***
+  *** NEW BEST H-rep (avg=10.36) ep=10 ***
+  *** NEW BEST H-rep (avg=10.38) ep=11 ***
+  *** NEW BEST H-rep (avg=10.39) ep=12 ***
+  *** NEW BEST H-rep (avg=10.40) ep=13 ***
+  *** NEW BEST H-rep (avg=10.42) ep=15 ***
+  *** NEW BEST H-rep (avg=10.42) ep=29 ***
+  *** NEW BEST H-rep (avg=10.42) ep=30 ***
+  *** NEW BEST H-rep (avg=10.43) ep=31 ***
+  *** NEW BEST H-rep (avg=10.44) ep=33 ***
+  *** NEW BEST H-rep (avg=10.44) ep=34 ***
+  *** NEW BEST H-rep (avg=10.44) ep=35 ***
+  *** NEW BEST H-rep (avg=10.44) ep=36 ***
+  *** NEW BEST H-rep (avg=10.44) ep=39 ***
+  *** NEW BEST H-rep (avg=10.44) ep=40 ***
+  *** NEW BEST H-rep (avg=10.45) ep=41 ***
+  *** NEW BEST H-rep (avg=10.45) ep=45 ***
+  *** NEW BEST H-rep (avg=10.45) ep=46 ***
+  *** NEW BEST H-rep (avg=10.45) ep=77 ***
+[H-rep] ep=  100  recent=10.44  best=10.45
+[H-rep] ep=  200  recent=10.44  best=10.45
+[H-rep] ep=  300  recent=10.45  best=10.45
+[H-rep] ep=  400  recent=10.45  best=10.45
+[H-rep] ep=  500  recent=10.44  best=10.45
+[H-rep] ep=  600  recent=-3.07  best=10.45
+[H-rep] ep=  700  recent=-3.05  best=10.45
+[H-rep] ep=  800  recent=10.44  best=10.45
+[H-rep] ep=  900  recent=10.45  best=10.45
+  *** NEW BEST H-rep (avg=10.45) ep=916 ***
+[H-rep] ep= 1000  recent=10.45  best=10.45
+  *** NEW BEST H-rep (avg=10.45) ep=1002 ***
+[H-rep] ep= 1100  recent=-1.80  best=10.45
+
+[train_single] Training done in 363.4 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.45±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p2_hrep.pth

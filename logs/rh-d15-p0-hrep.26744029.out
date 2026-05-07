@@ -1,0 +1,51 @@
+[train_single] difficulty=15  puzzle_idx=0  method=hrep  episodes=2500
+[train_single] board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[H-rep] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[H-rep] ep=    0  recent=-3.03  best=-inf
+  *** NEW BEST H-rep (avg=-3.05) ep=2 ***
+  *** NEW BEST H-rep (avg=-3.04) ep=19 ***
+  *** NEW BEST H-rep (avg=-3.02) ep=22 ***
+  *** NEW BEST H-rep (avg=-3.02) ep=23 ***
+  *** NEW BEST H-rep (avg=-3.01) ep=35 ***
+  *** NEW BEST H-rep (avg=-2.99) ep=37 ***
+[H-rep] ep=  100  recent=-3.12  best=-2.99
+[H-rep] ep=  200  recent=-3.07  best=-2.99
+[H-rep] ep=  300  recent=-3.09  best=-2.99
+  *** NEW BEST H-rep (avg=-2.99) ep=335 ***
+  *** NEW BEST H-rep (avg=-2.98) ep=336 ***
+  *** NEW BEST H-rep (avg=-2.98) ep=337 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=338 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=339 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=340 ***
+  *** NEW BEST H-rep (avg=-2.97) ep=341 ***
+  *** NEW BEST H-rep (avg=-2.96) ep=342 ***
+  *** NEW BEST H-rep (avg=-2.96) ep=343 ***
+  *** NEW BEST H-rep (avg=-2.96) ep=348 ***
+  *** NEW BEST H-rep (avg=-2.95) ep=349 ***
+[H-rep] ep=  400  recent=-3.05  best=-2.95
+[H-rep] ep=  500  recent=-3.04  best=-2.95
+[H-rep] ep=  600  recent=-3.01  best=-2.95
+[H-rep] ep=  700  recent=-3.01  best=-2.95
+[H-rep] ep=  800  recent=-2.99  best=-2.95
+[H-rep] ep=  900  recent=-3.02  best=-2.95
+[H-rep] ep= 1000  recent=-3.05  best=-2.95
+[H-rep] ep= 1100  recent=-3.03  best=-2.95
+  *** NEW BEST H-rep (avg=-2.83) ep=1143 ***
+  *** NEW BEST H-rep (avg=-2.81) ep=1144 ***
+[H-rep] ep= 1200  recent=-3.03  best=-2.81
+[H-rep] ep= 1300  recent=-3.05  best=-2.81
+[H-rep] ep= 1400  recent=-3.03  best=-2.81
+[H-rep] ep= 1500  recent=-3.05  best=-2.81
+[H-rep] ep= 1600  recent=-3.02  best=-2.81
+[H-rep] ep= 1700  recent=-3.02  best=-2.81
+[H-rep] ep= 1800  recent=-3.04  best=-2.81
+[H-rep] ep= 1900  recent=-3.03  best=-2.81
+[H-rep] ep= 2000  recent=-3.02  best=-2.81
+[H-rep] ep= 2100  recent=-3.04  best=-2.81
+[H-rep] ep= 2200  recent=-3.09  best=-2.81
+[H-rep] ep= 2300  recent=-3.00  best=-2.81
+[H-rep] ep= 2400  recent=-3.00  best=-2.81
+
+[train_single] Training done in 446.8 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p0_hrep.pth

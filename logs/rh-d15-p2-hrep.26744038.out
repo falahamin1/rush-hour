@@ -1,0 +1,45 @@
+[train_single] difficulty=15  puzzle_idx=2  method=hrep  episodes=2500
+[train_single] board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[H-rep] device=cpu  board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[H-rep] ep=    0  recent=-3.09  best=-inf
+  *** NEW BEST H-rep (avg=-3.15) ep=2 ***
+  *** NEW BEST H-rep (avg=-3.14) ep=5 ***
+  *** NEW BEST H-rep (avg=-3.14) ep=6 ***
+[H-rep] ep=  100  recent=-3.12  best=-3.14
+  *** NEW BEST H-rep (avg=-3.14) ep=151 ***
+[H-rep] ep=  200  recent=-3.13  best=-3.14
+[H-rep] ep=  300  recent=-3.13  best=-3.14
+  *** NEW BEST H-rep (avg=-3.13) ep=303 ***
+  *** NEW BEST H-rep (avg=-3.12) ep=319 ***
+  *** NEW BEST H-rep (avg=-3.12) ep=320 ***
+  *** NEW BEST H-rep (avg=-3.11) ep=345 ***
+  *** NEW BEST H-rep (avg=-3.10) ep=346 ***
+[H-rep] ep=  400  recent=-3.09  best=-3.10
+  *** NEW BEST H-rep (avg=-3.09) ep=404 ***
+  *** NEW BEST H-rep (avg=-3.09) ep=412 ***
+  *** NEW BEST H-rep (avg=-3.08) ep=413 ***
+  *** NEW BEST H-rep (avg=-3.08) ep=490 ***
+[H-rep] ep=  500  recent=-3.12  best=-3.08
+[H-rep] ep=  600  recent=-3.13  best=-3.08
+[H-rep] ep=  700  recent=-3.13  best=-3.08
+[H-rep] ep=  800  recent=-3.16  best=-3.08
+[H-rep] ep=  900  recent=-3.16  best=-3.08
+[H-rep] ep= 1000  recent=-3.12  best=-3.08
+[H-rep] ep= 1100  recent=-3.16  best=-3.08
+[H-rep] ep= 1200  recent=-3.13  best=-3.08
+[H-rep] ep= 1300  recent=-3.11  best=-3.08
+[H-rep] ep= 1400  recent=-3.13  best=-3.08
+[H-rep] ep= 1500  recent=-3.14  best=-3.08
+[H-rep] ep= 1600  recent=-3.14  best=-3.08
+[H-rep] ep= 1700  recent=-3.14  best=-3.08
+[H-rep] ep= 1800  recent=-3.16  best=-3.08
+[H-rep] ep= 1900  recent=-3.11  best=-3.08
+[H-rep] ep= 2000  recent=-3.09  best=-3.08
+[H-rep] ep= 2100  recent=-3.14  best=-3.08
+[H-rep] ep= 2200  recent=-3.08  best=-3.08
+[H-rep] ep= 2300  recent=-3.15  best=-3.08
+[H-rep] ep= 2400  recent=-3.11  best=-3.08
+
+[train_single] Training done in 322.7 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.05±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p2_hrep.pth

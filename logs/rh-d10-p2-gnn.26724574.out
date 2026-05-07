@@ -1,0 +1,6 @@
+/var/spool/slurmd/job26724574/slurm_script: line 12: /projects/amfa5003/software/anaconda/etc/profile.d/conda.sh: No such file or directory
+/var/spool/slurmd/job26724574/slurm_script: line 13: conda: command not found
+Traceback (most recent call last):
+  File "train_single.py", line 15, in <module>
+    import torch
+ModuleNotFoundError: No module named 'torch'

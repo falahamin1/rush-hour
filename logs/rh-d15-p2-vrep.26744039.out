@@ -1,0 +1,43 @@
+[train_single] difficulty=15  puzzle_idx=2  method=vrep  episodes=2500
+[train_single] board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[V-rep] device=cpu  board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[V-rep] ep=    0  recent=-3.07  best=-inf
+  *** NEW BEST V-rep (avg=-3.14) ep=2 ***
+  *** NEW BEST V-rep (avg=-3.14) ep=21 ***
+  *** NEW BEST V-rep (avg=-3.14) ep=24 ***
+  *** NEW BEST V-rep (avg=-3.14) ep=25 ***
+  *** NEW BEST V-rep (avg=-3.13) ep=27 ***
+  *** NEW BEST V-rep (avg=-3.11) ep=28 ***
+  *** NEW BEST V-rep (avg=-3.10) ep=30 ***
+  *** NEW BEST V-rep (avg=-3.09) ep=31 ***
+  *** NEW BEST V-rep (avg=-3.09) ep=36 ***
+[V-rep] ep=  100  recent=-3.12  best=-3.09
+  *** NEW BEST V-rep (avg=-3.07) ep=153 ***
+  *** NEW BEST V-rep (avg=-3.06) ep=154 ***
+[V-rep] ep=  200  recent=-3.16  best=-3.06
+[V-rep] ep=  300  recent=-3.16  best=-3.06
+[V-rep] ep=  400  recent=-3.18  best=-3.06
+[V-rep] ep=  500  recent=-3.17  best=-3.06
+[V-rep] ep=  600  recent=-3.09  best=-3.06
+[V-rep] ep=  700  recent=-3.13  best=-3.06
+[V-rep] ep=  800  recent=-3.11  best=-3.06
+[V-rep] ep=  900  recent=-3.14  best=-3.06
+[V-rep] ep= 1000  recent=-3.16  best=-3.06
+[V-rep] ep= 1100  recent=-3.16  best=-3.06
+[V-rep] ep= 1200  recent=-3.18  best=-3.06
+[V-rep] ep= 1300  recent=-3.15  best=-3.06
+[V-rep] ep= 1400  recent=-3.15  best=-3.06
+[V-rep] ep= 1500  recent=-3.18  best=-3.06
+[V-rep] ep= 1600  recent=-3.14  best=-3.06
+[V-rep] ep= 1700  recent=-3.14  best=-3.06
+[V-rep] ep= 1800  recent=-3.16  best=-3.06
+[V-rep] ep= 1900  recent=-3.15  best=-3.06
+[V-rep] ep= 2000  recent=-3.12  best=-3.06
+[V-rep] ep= 2100  recent=-3.11  best=-3.06
+[V-rep] ep= 2200  recent=-3.16  best=-3.06
+[V-rep] ep= 2300  recent=-3.11  best=-3.06
+[V-rep] ep= 2400  recent=-3.10  best=-3.06
+
+[train_single] Training done in 455.6 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.05±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p2_vrep.pth

@@ -1,0 +1,13 @@
+[train_single] difficulty=10  puzzle_idx=0  method=hrep  episodes=10
+[train_single] board=oBBCCooooJDDAAoJKoHoEEKLHoIFFLGGIooo
+[H-rep] device=cpu  board=oBBCCooooJDDAAoJKoHoEEKLHoIFFLGGIooo
+[H-rep] ep=    0  recent=0.56  best=-inf
+  *** NEW BEST H-rep (avg=-1.22) ep=2 ***
+  *** NEW BEST H-rep (avg=0.42) ep=5 ***
+  *** NEW BEST H-rep (avg=0.62) ep=6 ***
+  *** NEW BEST H-rep (avg=0.76) ep=7 ***
+  *** NEW BEST H-rep (avg=0.84) ep=8 ***
+
+[train_single] Training done in 2.4 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.73±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p0_hrep.pth
