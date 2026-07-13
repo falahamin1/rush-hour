@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.dirname(__file__))
 from rush_hour_env import RushHourGym, MAX_VEHICLES, MAX_CONSTRAINTS, NUM_ACTIONS
 from GraphNNRL import GNNActorCritic
 from PPOBuffer import PPOBuffer
+from checkpoint_utils import save_checkpoint, load_checkpoint
 
 PUZZLE_FILE = os.path.join(os.path.dirname(__file__), 'rush.txt')
 DEFAULT_BOARD = 'IBBxooIooLDDJAALooJoKEEMFFKooMGGHHHM'
@@ -38,7 +39,7 @@ def _load_puzzle(max_moves=10):
     return DEFAULT_BOARD
 
 
-def train_graph_rep(board_str=None, episodes=1000):
+def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None):
     if board_str is None:
         board_str = _load_puzzle()
 
@@ -75,11 +76,22 @@ def train_graph_rep(board_str=None, episodes=1000):
     reward_history = []
     best_moving_avg = -float('inf')
     best_weights = deepcopy(model.state_dict())
+    start_ep = 0
+
+    ckpt = load_checkpoint(checkpoint_path)
+    if ckpt is not None:
+        model.load_state_dict(ckpt['model_state'])
+        optimizer.load_state_dict(ckpt['optimizer_state'])
+        best_weights = ckpt['best_weights']
+        best_moving_avg = ckpt['best_moving_avg']
+        reward_history = ckpt['reward_history']
+        start_ep = ckpt['episode'] + 1
+        print(f"[GNN] Resumed from checkpoint at ep={start_ep}  best={best_moving_avg:.2f}")
 
     obs, _ = env.reset()
     ep_reward = 0
 
-    for ep in range(episodes):
+    for ep in range(start_ep, episodes):
         # ── rollout ──────────────────────────────────────────────────────────
         for t in range(HP["steps_per_rollout"]):
             h_ts  = torch.tensor(obs['h_rep'], dtype=torch.float32).unsqueeze(0).to(device)
@@ -155,6 +167,11 @@ def train_graph_rep(board_str=None, episodes=1000):
 
         h_buf.clear()
         adj_buf.clear()
+
+        if checkpoint_path and (ep % 25 == 0 or ep == episodes - 1):
+            save_checkpoint(checkpoint_path, model=model, optimizer=optimizer, episode=ep,
+                             best_weights=best_weights, best_moving_avg=best_moving_avg,
+                             reward_history=reward_history)
 
         if ep % 100 == 0:
             recent = np.mean(reward_history[-10:]) if reward_history else 0

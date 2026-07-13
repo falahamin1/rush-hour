@@ -1,8 +1,10 @@
 """
-Train and compare all three PPO methods on the same Rush Hour puzzle:
+Train and compare all five PPO methods on the same Rush Hour puzzle:
   1. H-rep  DeepSet
   2. V-rep  DeepSet
   3. Graph  NN (GCN)
+  4. Flat MLP  (point-wise encoding strawman)
+  5. CNN       (occupancy-grid strawman)
 
 Run: python Rush-hour/comparison.py
 """
@@ -18,6 +20,8 @@ from rush_hour_env import RushHourGym, MAX_VEHICLES, MAX_CONSTRAINTS, NUM_ACTION
 from run_hrep import train_h_rep
 from run_vrep import train_v_rep
 from run_gnn import train_graph_rep
+from run_mlp import train_flat_mlp
+from run_cnn import train_cnn_rep
 
 PUZZLE_FILE = os.path.join(os.path.dirname(__file__), 'rush.txt')
 DEFAULT_BOARD = 'IBBxooIooLDDJAALooJoKEEMFFKooMGGHHHM'
@@ -56,10 +60,16 @@ def _get_action(model, method, obs, mask, device):
             s = torch.tensor(obs['v_rep'], dtype=torch.float32)
             s = s.view(MAX_VEHICLES, V_DIM).unsqueeze(0).to(device)
             logits, _ = model(s)
-        else:  # gnn
+        elif method == 'gnn':
             h   = torch.tensor(obs['h_rep'], dtype=torch.float32).unsqueeze(0).to(device)
             adj = torch.tensor(obs['adj'],   dtype=torch.float32).unsqueeze(0).to(device)
             logits, _ = model(h, adj)
+        elif method == 'mlp':
+            s = torch.tensor(obs['flat_pose'], dtype=torch.float32).unsqueeze(0).to(device)
+            logits, _ = model(s)
+        else:   # cnn
+            s = torch.tensor(obs['grid_image'], dtype=torch.float32).unsqueeze(0).to(device)
+            logits, _ = model(s)
         logits[0][~mask] = -1e10
         return torch.argmax(logits, dim=-1).item()
 
@@ -158,7 +168,8 @@ def _plot_results(results):
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 4))
     fig.suptitle('Rush Hour — Method Comparison', fontsize=13)
 
-    colors = ['#3498db', '#2ecc71', '#e74c3c']
+    palette = ['#3498db', '#2ecc71', '#e74c3c', '#95a5a6', '#f39c12']
+    colors = palette[:len(names)]
     ax1.bar(names, means, yerr=stds, color=colors, capsize=5, alpha=0.85)
     ax1.set_ylabel('Mean eval reward')
     ax1.set_title('Reward')
@@ -181,17 +192,24 @@ def run_comparison(episodes=500, eval_episodes=20, max_moves=10, puzzle_index=0)
     board = _load_puzzle(max_moves=max_moves, index=puzzle_index)
     print(f"\nPuzzle: {board}\n{'='*60}")
 
-    print("\n[1/3] Training H-rep DeepSet ...")
+    print("\n[1/5] Training H-rep DeepSet ...")
     _, best_h = train_h_rep(board_str=board, episodes=episodes)
 
-    print("\n[2/3] Training V-rep DeepSet ...")
+    print("\n[2/5] Training V-rep DeepSet ...")
     _, best_v = train_v_rep(board_str=board, episodes=episodes)
 
-    print("\n[3/3] Training Graph NN ...")
+    print("\n[3/5] Training Graph NN ...")
     _, best_g = train_graph_rep(board_str=board, episodes=episodes)
+
+    print("\n[4/5] Training Flat MLP ...")
+    _, best_m = train_flat_mlp(board_str=board, episodes=episodes)
+
+    print("\n[5/5] Training CNN ...")
+    _, best_c = train_cnn_rep(board_str=board, episodes=episodes)
 
     device = torch.device("cpu")
     best_h.to(device); best_v.to(device); best_g.to(device)
+    best_m.to(device); best_c.to(device)
 
     # ── Evaluation ───────────────────────────────────────────────────────────
     print("\n" + "="*60)
@@ -203,6 +221,8 @@ def run_comparison(episodes=500, eval_episodes=20, max_moves=10, puzzle_index=0)
         ("H-rep DeepSet", best_h, "hrep"),
         ("V-rep DeepSet", best_v, "vrep"),
         ("Graph NN",      best_g, "gnn"),
+        ("Flat MLP",      best_m, "mlp"),
+        ("CNN",           best_c, "cnn"),
     ]
     for name, model, method in configs:
         r = evaluate(model, method, board, episodes=eval_episodes)

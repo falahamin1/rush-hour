@@ -24,6 +24,10 @@ MAX_VEHICLES = 16  # Pad observations to this fixed size
 MAX_CONSTRAINTS = 4  # Rectangles have exactly 4 half-space constraints
 NUM_ACTIONS = MAX_VEHICLES * 2
 
+# Baseline observation dims (strawman encoders — see flat_pose / grid_image below)
+POSE_DIM = MAX_VEHICLES * 4   # (x, y, length, orientation) per vehicle, zero-padded
+GRID_CHANNELS = 3             # occupancy, target-vehicle, orientation
+
 
 # ── Vehicle ────────────────────────────────────────────────────────────────
 
@@ -222,9 +226,13 @@ class RushHourGym(gym.Env):
         direction 0 → move +1 step  |  direction 1 → move -1 step
 
     Observations (both padded to MAX_VEHICLES):
-        h_rep : (MAX_VEHICLES, MAX_CONSTRAINTS, 3)   half-space features
-        v_rep : (MAX_VEHICLES, 4, 2)                 corner vertices
-        adj   : (MAX_VEHICLES, MAX_CONSTRAINTS, MAX_CONSTRAINTS)
+        h_rep      : (MAX_VEHICLES, MAX_CONSTRAINTS, 3)   half-space features
+        v_rep      : (MAX_VEHICLES, 4, 2)                 corner vertices
+        adj        : (MAX_VEHICLES, MAX_CONSTRAINTS, MAX_CONSTRAINTS)
+        flat_pose  : (POSE_DIM,)  = (MAX_VEHICLES * 4,)   per-vehicle (x, y, length,
+                     orientation), zero-padded — the "point-wise encoding" strawman
+        grid_image : (GRID_CHANNELS, GRID, GRID)          occupancy / target / orientation
+                     channels — the CNN-over-the-board strawman
 
     PPL polytopes are built once per step inside _get_obs(); constraints and
     generators are cached and shared across all three observation builders.
@@ -262,6 +270,9 @@ class RushHourGym(gym.Env):
             'adj':   spaces.Box(0.0, 1.0,
                                 shape=(MAX_VEHICLES, MAX_CONSTRAINTS, MAX_CONSTRAINTS),
                                 dtype=np.float32),
+            'flat_pose':  spaces.Box(-1.0, 1.0, shape=(POSE_DIM,), dtype=np.float32),
+            'grid_image': spaces.Box(-1.0, 1.0,
+                                shape=(GRID_CHANNELS, GRID, GRID), dtype=np.float32),
         })
 
     # ── polytope construction (obs-time only) ──────────────────────────────
@@ -302,6 +313,8 @@ class RushHourGym(gym.Env):
             'h_rep': self._extract_h_rep(constraints, px, py),
             'v_rep': self._extract_v_rep(generators, px, py),
             'adj':   self._build_graph_adj(constraints, generators, px, py),
+            'flat_pose':  self._extract_flat_pose(vehicles),
+            'grid_image': self._extract_grid_image(vehicles),
         }
 
     def _extract_h_rep(self, constraints, px, py):
@@ -344,6 +357,40 @@ class RushHourGym(gym.Env):
                             all_adj[idx, i, j] = all_adj[idx, j, i] = 1.0
                             break
         return all_adj
+
+    def _extract_flat_pose(self, vehicles):
+        """Flat 'point-wise' baseline: (x, y, length, orientation) per vehicle,
+        zero-padded to MAX_VEHICLES and concatenated into one POSE_DIM vector.
+        No geometric structure, no permutation-invariance — the strawman.
+        """
+        out = np.zeros(POSE_DIM, dtype=np.float32)
+        n = min(len(vehicles), MAX_VEHICLES)
+        for i in range(n):
+            v = vehicles[i]
+            out[i * 4:i * 4 + 4] = [
+                v.col / GRID,
+                v.row / GRID,
+                v.size / GRID,
+                1.0 if v.horizontal else 0.0,
+            ]
+        return out
+
+    def _extract_grid_image(self, vehicles):
+        """CNN baseline: 6x6 occupancy image with 3 channels —
+        occupancy (any vehicle), target vehicle (red car 'A'), orientation
+        (+1 horizontal / -1 vertical), 0 on empty cells.
+        """
+        img = np.zeros((GRID_CHANNELS, GRID, GRID), dtype=np.float32)
+        for v in vehicles:
+            cells = ([(v.row, c) for c in range(v.col, v.col + v.size)] if v.horizontal
+                     else [(r, v.col) for r in range(v.row, v.row + v.size)])
+            orient = 1.0 if v.horizontal else -1.0
+            for r, c in cells:
+                img[0, r, c] = 1.0
+                if v.vid == 'A':
+                    img[1, r, c] = 1.0
+                img[2, r, c] = orient
+        return img
 
     @staticmethod
     def _eval_constraint(constraint, vertex, px, py):
@@ -452,6 +499,8 @@ if __name__ == '__main__':
     obs, _ = env.reset()
     print('\nh_rep shape:', obs['h_rep'].shape)
     print('v_rep shape:', obs['v_rep'].shape)
+    print('flat_pose shape:', obs['flat_pose'].shape)
+    print('grid_image shape:', obs['grid_image'].shape)
     print('Action mask (first 10):', env.get_action_mask()[:10])
 
     env.inner.render(title='Initial state')

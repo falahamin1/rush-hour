@@ -6,3 +6,4 @@ difficulty,puzzle_idx,board_str,method,mean_reward,std_reward,solve_rate,train_e
 10,1,FoBBoJFoooIJooAAIKooGCCKooGHDDoEEHoo,vrep,10.2895,0.0000,1.0000,750,9581.3
 10,1,FoBBoJFoooIJooAAIKooGCCKooGHDDoEEHoo,gnn,10.2793,0.0000,1.0000,750,12542.6
 10,2,oooBBoGCCIJoGAAIJoooHIDDooHEEKooFFoK,hrep,10.3104,0.0000,1.0000,750,10826.9
+10,0,oBBCCooooJDDAAoJKoHoEEKLHoIFFLGGIooo,mlp,10.3660,0.0000,1.0000,750,4407.4

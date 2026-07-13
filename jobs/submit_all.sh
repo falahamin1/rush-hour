@@ -1,5 +1,6 @@
 #!/bin/bash
-# Submit all 27 jobs. Run from the rush-hour directory:
+# Submit every d*_p*_*.slurm job (one per puzzle x method combo). Run from
+# the rush-hour directory:
 #   bash jobs/submit_all.sh
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"

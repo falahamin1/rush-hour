@@ -20,12 +20,15 @@ from rush_hour_env import RushHourGym, MAX_VEHICLES, MAX_CONSTRAINTS, NUM_ACTION
 from run_hrep import train_h_rep
 from run_vrep import train_v_rep
 from run_gnn  import train_graph_rep
+from run_mlp  import train_flat_mlp
+from run_cnn  import train_cnn_rep
 
 H_DIM = MAX_CONSTRAINTS * 3   # 12
 V_DIM = 4 * 2                 # 8
 
 PUZZLE_FILE = os.path.join(os.path.dirname(__file__), 'rush.txt')
 POLICY_DIR  = os.path.join(os.path.dirname(__file__), 'policies')
+CKPT_DIR    = os.path.join(os.path.dirname(__file__), 'checkpoints')
 
 
 def load_puzzle_by_index(difficulty, idx):
@@ -53,10 +56,16 @@ def _get_action(model, method, obs, mask, device):
             s = torch.tensor(obs['v_rep'], dtype=torch.float32)
             s = s.view(MAX_VEHICLES, V_DIM).unsqueeze(0).to(device)
             logits, _ = model(s)
-        else:
+        elif method == 'gnn':
             h   = torch.tensor(obs['h_rep'], dtype=torch.float32).unsqueeze(0).to(device)
             adj = torch.tensor(obs['adj'],   dtype=torch.float32).unsqueeze(0).to(device)
             logits, _ = model(h, adj)
+        elif method == 'mlp':
+            s = torch.tensor(obs['flat_pose'], dtype=torch.float32).unsqueeze(0).to(device)
+            logits, _ = model(s)
+        else:   # cnn
+            s = torch.tensor(obs['grid_image'], dtype=torch.float32).unsqueeze(0).to(device)
+            logits, _ = model(s)
         logits[0][~mask] = -1e10
         return torch.argmax(logits, dim=-1).item()
 
@@ -92,10 +101,18 @@ def main():
                     help='Exact number of moves (10, 12, or 15)')
     ap.add_argument('--puzzle-idx',    type=int, required=True,
                     help='0-based index of the puzzle within that difficulty')
-    ap.add_argument('--method',        choices=['hrep', 'vrep', 'gnn'], required=True)
+    ap.add_argument('--method',        choices=['hrep', 'vrep', 'gnn', 'mlp', 'cnn'], required=True)
     ap.add_argument('--episodes',      type=int, required=True)
     ap.add_argument('--eval-episodes', type=int, default=50)
     args = ap.parse_args()
+
+    out_path = os.path.join(
+        POLICY_DIR,
+        f'd{args.difficulty}_p{args.puzzle_idx}_{args.method}.pth'
+    )
+    if os.path.exists(out_path):
+        print(f"[train_single] {out_path} already exists — skipping.")
+        return
 
     board_str = load_puzzle_by_index(args.difficulty, args.puzzle_idx)
 
@@ -107,10 +124,18 @@ def main():
         'hrep': train_h_rep,
         'vrep': train_v_rep,
         'gnn':  train_graph_rep,
+        'mlp':  train_flat_mlp,
+        'cnn':  train_cnn_rep,
     }
 
+    ckpt_path = os.path.join(
+        CKPT_DIR,
+        f'd{args.difficulty}_p{args.puzzle_idx}_{args.method}.pt'
+    )
+
     t0 = time.time()
-    _, best_model = TRAIN[args.method](board_str=board_str, episodes=args.episodes)
+    _, best_model = TRAIN[args.method](board_str=board_str, episodes=args.episodes,
+                                        checkpoint_path=ckpt_path)
     elapsed = time.time() - t0
 
     print(f"\n[train_single] Training done in {elapsed/60:.1f} min. Evaluating ...")
@@ -121,10 +146,6 @@ def main():
           f"reward={metrics['mean_reward']:.2f}±{metrics['std_reward']:.2f}")
 
     os.makedirs(POLICY_DIR, exist_ok=True)
-    out_path = os.path.join(
-        POLICY_DIR,
-        f'd{args.difficulty}_p{args.puzzle_idx}_{args.method}.pth'
-    )
     torch.save({
         'method':         args.method,
         'difficulty':     args.difficulty,
@@ -136,6 +157,9 @@ def main():
         'train_seconds':  elapsed,
     }, out_path)
     print(f"[train_single] Policy saved → {out_path}")
+
+    if os.path.exists(ckpt_path):
+        os.remove(ckpt_path)
 
 
 if __name__ == '__main__':

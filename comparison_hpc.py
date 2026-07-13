@@ -28,6 +28,8 @@ from rush_hour_env import RushHourGym, MAX_VEHICLES, MAX_CONSTRAINTS, NUM_ACTION
 from run_hrep import train_h_rep
 from run_vrep import train_v_rep
 from run_gnn  import train_graph_rep
+from run_mlp  import train_flat_mlp
+from run_cnn  import train_cnn_rep
 
 H_DIM = MAX_CONSTRAINTS * 3   # 12
 V_DIM = 4 * 2                 # 8
@@ -75,10 +77,16 @@ def _get_action(model, method, obs, mask, device):
             s = torch.tensor(obs['v_rep'], dtype=torch.float32)
             s = s.view(MAX_VEHICLES, V_DIM).unsqueeze(0).to(device)
             logits, _ = model(s)
-        else:   # gnn
+        elif method == 'gnn':
             h   = torch.tensor(obs['h_rep'], dtype=torch.float32).unsqueeze(0).to(device)
             adj = torch.tensor(obs['adj'],   dtype=torch.float32).unsqueeze(0).to(device)
             logits, _ = model(h, adj)
+        elif method == 'mlp':
+            s = torch.tensor(obs['flat_pose'], dtype=torch.float32).unsqueeze(0).to(device)
+            logits, _ = model(s)
+        else:   # cnn
+            s = torch.tensor(obs['grid_image'], dtype=torch.float32).unsqueeze(0).to(device)
+            logits, _ = model(s)
         logits[0][~mask] = -1e10
         return torch.argmax(logits, dim=-1).item()
 
@@ -144,9 +152,9 @@ def plot_results(csv_path, difficulty, out_dir):
         return
 
     puzzles = sorted(set(int(r['puzzle_idx']) for r in rows))
-    methods = ['hrep', 'vrep', 'gnn']
-    labels  = ['H-rep', 'V-rep', 'GNN']
-    colors  = ['#3498db', '#2ecc71', '#e74c3c']
+    methods = ['hrep', 'vrep', 'gnn', 'mlp', 'cnn']
+    labels  = ['H-rep', 'V-rep', 'GNN', 'Flat MLP', 'CNN']
+    colors  = ['#3498db', '#2ecc71', '#e74c3c', '#95a5a6', '#f39c12']
 
     def _get(ridx, m, key):
         match = [r for r in rows if int(r['puzzle_idx']) == ridx and r['method'] == m]
@@ -221,13 +229,15 @@ def run_comparison(difficulty, episodes, n_puzzles=3, eval_episodes=50):
         print(f"  Puzzle {i+1}: {b}")
 
     completed = load_completed(csv_path)
-    total_combos = len(puzzles) * 3
+    total_combos = len(puzzles) * 5
     print(f"\nProgress: {len(completed)}/{total_combos} combos already done")
 
     methods = [
         ('hrep', lambda b: train_h_rep(board_str=b, episodes=episodes)),
         ('vrep', lambda b: train_v_rep(board_str=b, episodes=episodes)),
         ('gnn',  lambda b: train_graph_rep(board_str=b, episodes=episodes)),
+        ('mlp',  lambda b: train_flat_mlp(board_str=b, episodes=episodes)),
+        ('cnn',  lambda b: train_cnn_rep(board_str=b, episodes=episodes)),
     ]
 
     for pidx, board in enumerate(puzzles):

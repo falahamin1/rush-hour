@@ -1,8 +1,10 @@
 """
-PPO training using V-representation (DeepSet) for Rush Hour.
+PPO training using a CNN over the occupancy grid for Rush Hour.
 
-State: v_rep flattened per vehicle → shape (MAX_VEHICLES, 8)
-       where 8 = 4 corner vertices × 2 coordinates.
+State: grid_image → shape (GRID_CHANNELS, GRID, GRID), a multi-channel
+       6x6 image (occupancy, target vehicle, orientation). This is the
+       encoder every reviewer will independently imagine — the baseline
+       most likely to rival the polytope DeepSet encoders.
 """
 import os
 import sys
@@ -14,13 +16,10 @@ import numpy as np
 from copy import deepcopy
 
 sys.path.insert(0, os.path.dirname(__file__))
-from rush_hour_env import RushHourGym, MAX_VEHICLES, NUM_ACTIONS
-from DeepSetRL import DeepSetActorCritic
+from rush_hour_env import RushHourGym, GRID, GRID_CHANNELS, NUM_ACTIONS
+from CNNRL import CNNActorCritic
 from PPOBuffer import PPOBuffer
 from checkpoint_utils import save_checkpoint, load_checkpoint
-
-# Flattened feature size per vehicle for V-rep
-V_DIM = 4 * 2  # 4 corners × 2 coords = 8
 
 PUZZLE_FILE = os.path.join(os.path.dirname(__file__), 'rush.txt')
 DEFAULT_BOARD = 'IBBxooIooLDDJAALooJoKEEMFFKooMGGHHHM'
@@ -33,14 +32,14 @@ def _load_puzzle(max_moves=10):
             for line in f:
                 parts = line.strip().split()
                 if len(parts) >= 2 and int(parts[0]) <= max_moves:
-                    print(f"[V-rep] Loaded puzzle requiring {parts[0]} moves.")
+                    print(f"[CNN] Loaded puzzle requiring {parts[0]} moves.")
                     return parts[1]
     except Exception:
         pass
     return DEFAULT_BOARD
 
 
-def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
+def train_cnn_rep(board_str=None, episodes=1000, checkpoint_path=None):
     if board_str is None:
         board_str = _load_puzzle()
 
@@ -58,16 +57,15 @@ def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
     }
 
     device = torch.device("cpu")
-    print(f"[V-rep] device={device}  board={board_str}")
+    print(f"[CNN] device={device}  board={board_str}")
 
     env = RushHourGym(board_str)
-    model = DeepSetActorCritic(
-        input_dim=V_DIM,
-        num_pieces=MAX_VEHICLES,
+    model = CNNActorCritic(
+        in_channels=GRID_CHANNELS,
         num_actions=NUM_ACTIONS,
     ).to(device)
     optimizer = optim.Adam(model.parameters(), lr=HP["lr"])
-    buffer = PPOBuffer(size=HP["steps_per_rollout"], state_shape=(MAX_VEHICLES, V_DIM))
+    buffer = PPOBuffer(size=HP["steps_per_rollout"], state_shape=(GRID_CHANNELS, GRID, GRID))
 
     reward_history = []
     best_moving_avg = -float('inf')
@@ -82,7 +80,7 @@ def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
         best_moving_avg = ckpt['best_moving_avg']
         reward_history = ckpt['reward_history']
         start_ep = ckpt['episode'] + 1
-        print(f"[V-rep] Resumed from checkpoint at ep={start_ep}  best={best_moving_avg:.2f}")
+        print(f"[CNN] Resumed from checkpoint at ep={start_ep}  best={best_moving_avg:.2f}")
 
     obs, _ = env.reset()
     ep_reward = 0
@@ -90,8 +88,7 @@ def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
     for ep in range(start_ep, episodes):
         # ── rollout ──────────────────────────────────────────────────────────
         for t in range(HP["steps_per_rollout"]):
-            raw = torch.tensor(obs['v_rep'], dtype=torch.float32)
-            state_flat = raw.view(MAX_VEHICLES, V_DIM)
+            state_flat = torch.tensor(obs['grid_image'], dtype=torch.float32)
             state_in   = state_flat.unsqueeze(0).to(device)
 
             mask_ts = torch.tensor(env.get_action_mask(), dtype=torch.bool).to(device)
@@ -113,8 +110,7 @@ def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
                 obs, _ = env.reset()
                 ep_reward = 0
             elif t == HP["steps_per_rollout"] - 1:
-                nxt = torch.tensor(obs['v_rep'], dtype=torch.float32)
-                nxt_in = nxt.view(MAX_VEHICLES, V_DIM).unsqueeze(0).to(device)
+                nxt_in = torch.tensor(obs['grid_image'], dtype=torch.float32).unsqueeze(0).to(device)
                 with torch.no_grad():
                     _, last_val = model(nxt_in)
                 buffer.finish_path(last_val.item())
@@ -125,7 +121,7 @@ def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
             if avg > best_moving_avg:
                 best_moving_avg = avg
                 best_weights = deepcopy(model.state_dict())
-                print(f"  *** NEW BEST V-rep (avg={best_moving_avg:.2f}) ep={ep} ***")
+                print(f"  *** NEW BEST CNN (avg={best_moving_avg:.2f}) ep={ep} ***")
 
         # ── PPO update ────────────────────────────────────────────────────────
         data = buffer.get()
@@ -166,16 +162,14 @@ def train_v_rep(board_str=None, episodes=1000, checkpoint_path=None):
 
         if ep % 100 == 0:
             recent = np.mean(reward_history[-10:]) if reward_history else 0
-            print(f"[V-rep] ep={ep:5d}  recent={recent:.2f}  best={best_moving_avg:.2f}")
+            print(f"[CNN]   ep={ep:5d}  recent={recent:.2f}  best={best_moving_avg:.2f}")
 
-    torch.save(model.state_dict(), os.path.join(os.path.dirname(__file__), 'rh_vrep_final.pth'))
+    torch.save(model.state_dict(), os.path.join(os.path.dirname(__file__), 'rh_cnn_final.pth'))
 
-    best_model = DeepSetActorCritic(
-        input_dim=V_DIM, num_pieces=MAX_VEHICLES, num_actions=NUM_ACTIONS
-    )
+    best_model = CNNActorCritic(in_channels=GRID_CHANNELS, num_actions=NUM_ACTIONS)
     best_model.load_state_dict(best_weights)
     return model, best_model
 
 
 if __name__ == '__main__':
-    train_v_rep(episodes=3000)
+    train_cnn_rep(episodes=3000)
