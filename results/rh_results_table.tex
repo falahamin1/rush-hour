@@ -1,0 +1,18 @@
+\begin{table}[t]
+\centering
+\caption{Rush Hour solve rate and mean evaluation reward by state representation, averaged over 3 puzzles per difficulty (mean $\pm$ std).}
+\label{tab:rush-hour-results}
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{2}{c}{Difficulty 10} & \multicolumn{2}{c}{Difficulty 12} & \multicolumn{2}{c}{Difficulty 15} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7}
+Method & Solve (\%) & Reward & Solve (\%) & Reward & Solve (\%) & Reward \\
+\midrule
+H-rep & 100 $\pm$ 0 & +10.31 $\pm$ 0.04 & 67 $\pm$ 47 & +5.88 $\pm$ 6.39 & 0 $\pm$ 0 & -2.97 $\pm$ 0.06 \\
+V-rep & \textbf{100 $\pm$ 0} & \textbf{+10.32 $\pm$ 0.03} & \textbf{100 $\pm$ 0} & \textbf{+10.28 $\pm$ 0.17} & \textbf{33 $\pm$ 47} & \textbf{+1.39 $\pm$ 6.18} \\
+GNN & 100 $\pm$ 0 & +10.31 $\pm$ 0.04 & 67 $\pm$ 47 & +5.88 $\pm$ 6.39 & 0 $\pm$ 0 & -3.01 $\pm$ 0.13 \\
+Flat MLP & 100 $\pm$ 0 & +10.31 $\pm$ 0.04 & 67 $\pm$ 47 & +5.88 $\pm$ 6.39 & 33 $\pm$ 47 & +1.34 $\pm$ 6.21 \\
+CNN & 100 $\pm$ 0 & +10.32 $\pm$ 0.04 & 67 $\pm$ 47 & +5.88 $\pm$ 6.39 & 33 $\pm$ 47 & +1.39 $\pm$ 6.20 \\
+\bottomrule
+\end{tabular}
+\end{table}

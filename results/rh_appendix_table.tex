@@ -1,0 +1,29 @@
+\begin{longtable}{llccccc}
+\caption{Per-puzzle Rush Hour results underlying Table~\ref{tab:rush-hour-results}. Each eval is fully deterministic (greedy policy, deterministic environment), so std across the 50 eval episodes is always 0; the only variation is across puzzles.}
+\label{tab:rush-hour-per-puzzle}\\
+\toprule
+Difficulty & Puzzle & H-rep & V-rep & GNN & Flat MLP & CNN \\
+\midrule
+\endfirsthead
+\multicolumn{7}{c}{\tablename\ \thetable{} -- continued from previous page} \\
+\toprule
+Difficulty & Puzzle & H-rep & V-rep & GNN & Flat MLP & CNN \\
+\midrule
+\endhead
+\midrule
+\multicolumn{7}{r}{Continued on next page} \\
+\endfoot
+\bottomrule
+\endlastfoot
+10 & 1 & \checkmark (+10.37) & \checkmark (+10.37) & \checkmark (+10.37) & \checkmark (+10.37) & \checkmark (+10.37) \\
+ & 2 & \checkmark (+10.28) & \checkmark (+10.29) & \checkmark (+10.28) & \checkmark (+10.29) & \checkmark (+10.28) \\
+ & 3 & \checkmark (+10.28) & \checkmark (+10.31) & \checkmark (+10.27) & \checkmark (+10.28) & \checkmark (+10.31) \\
+\midrule
+12 & 1 & \ding{55} (-3.17) & \checkmark (+10.04) & \ding{55} (-3.17) & \ding{55} (-3.17) & \ding{55} (-3.17) \\
+ & 2 & \checkmark (+10.35) & \checkmark (+10.35) & \checkmark (+10.35) & \checkmark (+10.35) & \checkmark (+10.35) \\
+ & 3 & \checkmark (+10.45) & \checkmark (+10.45) & \checkmark (+10.45) & \checkmark (+10.45) & \checkmark (+10.45) \\
+\midrule
+15 & 1 & \ding{55} (-2.93) & \checkmark (+10.13) & \ding{55} (-2.93) & \checkmark (+10.12) & \ding{55} (-2.93) \\
+ & 2 & \ding{55} (-2.92) & \ding{55} (-2.90) & \ding{55} (-2.90) & \ding{55} (-2.90) & \checkmark (+10.16) \\
+ & 3 & \ding{55} (-3.05) & \ding{55} (-3.05) & \ding{55} (-3.20) & \ding{55} (-3.20) & \ding{55} (-3.05) \\
+\end{longtable}
