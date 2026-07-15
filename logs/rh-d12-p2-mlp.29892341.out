@@ -1,0 +1,37 @@
+[train_single] difficulty=12  puzzle_idx=2  method=mlp  episodes=1200
+[train_single] board=ooBBoxGHooKoGHAAKLoDDJoLooIJEEFFIooo
+[MLP] device=cpu  board=ooBBoxGHooKoGHAAKLoDDJoLooIJEEFFIooo
+[MLP]   ep=    0  recent=5.72  best=-inf
+  *** NEW BEST MLP (avg=10.12) ep=1 ***
+  *** NEW BEST MLP (avg=10.27) ep=2 ***
+  *** NEW BEST MLP (avg=10.38) ep=3 ***
+  *** NEW BEST MLP (avg=10.41) ep=4 ***
+  *** NEW BEST MLP (avg=10.41) ep=5 ***
+  *** NEW BEST MLP (avg=10.42) ep=6 ***
+  *** NEW BEST MLP (avg=10.43) ep=7 ***
+  *** NEW BEST MLP (avg=10.43) ep=8 ***
+  *** NEW BEST MLP (avg=10.44) ep=9 ***
+  *** NEW BEST MLP (avg=10.44) ep=12 ***
+  *** NEW BEST MLP (avg=10.44) ep=25 ***
+  *** NEW BEST MLP (avg=10.44) ep=30 ***
+  *** NEW BEST MLP (avg=10.44) ep=32 ***
+  *** NEW BEST MLP (avg=10.45) ep=33 ***
+  *** NEW BEST MLP (avg=10.45) ep=36 ***
+[MLP]   ep=  100  recent=10.44  best=10.45
+[MLP]   ep=  200  recent=10.43  best=10.45
+  *** NEW BEST MLP (avg=10.45) ep=294 ***
+[MLP]   ep=  300  recent=10.44  best=10.45
+  *** NEW BEST MLP (avg=10.45) ep=361 ***
+  *** NEW BEST MLP (avg=10.45) ep=375 ***
+[MLP]   ep=  400  recent=10.45  best=10.45
+[MLP]   ep=  500  recent=10.45  best=10.45
+[MLP]   ep=  600  recent=10.45  best=10.45
+[MLP]   ep=  700  recent=10.45  best=10.45
+[MLP]   ep=  800  recent=10.45  best=10.45
+[MLP]   ep=  900  recent=10.44  best=10.45
+[MLP]   ep= 1000  recent=10.45  best=10.45
+[MLP]   ep= 1100  recent=10.45  best=10.45
+
+[train_single] Training done in 476.1 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.45±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p2_mlp.pth

@@ -1,0 +1,22 @@
+[train_single] difficulty=12  puzzle_idx=0  method=mlp  episodes=1200
+[train_single] board=ooBBJoFGHoJKFGHAAKoCCIoKoooIDDEEoooo
+[MLP] device=cpu  board=ooBBJoFGHoJKFGHAAKoCCIoKoooIDDEEoooo
+[MLP]   ep=    0  recent=-3.23  best=-inf
+  *** NEW BEST MLP (avg=-3.19) ep=2 ***
+  *** NEW BEST MLP (avg=-2.98) ep=3 ***
+  *** NEW BEST MLP (avg=-2.97) ep=4 ***
+[MLP]   ep=  100  recent=-3.15  best=-2.97
+[MLP]   ep=  200  recent=-3.13  best=-2.97
+[MLP]   ep=  300  recent=-3.14  best=-2.97
+[MLP]   ep=  400  recent=-3.17  best=-2.97
+[MLP]   ep=  500  recent=-3.15  best=-2.97
+[MLP]   ep=  600  recent=-3.13  best=-2.97
+[MLP]   ep=  700  recent=-3.15  best=-2.97
+[MLP]   ep=  800  recent=-3.18  best=-2.97
+[MLP]   ep=  900  recent=-3.19  best=-2.97
+[MLP]   ep= 1000  recent=-3.20  best=-2.97
+[MLP]   ep= 1100  recent=-3.16  best=-2.97
+
+[train_single] Training done in 127.0 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.17±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p0_mlp.pth

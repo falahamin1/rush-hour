@@ -1,0 +1,50 @@
+[train_single] difficulty=15  puzzle_idx=0  method=cnn  episodes=2500
+[train_single] board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[CNN] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEoFFIooo
+[CNN]   ep=    0  recent=-2.98  best=-inf
+  *** NEW BEST CNN (avg=-3.05) ep=2 ***
+  *** NEW BEST CNN (avg=-3.04) ep=5 ***
+  *** NEW BEST CNN (avg=-3.03) ep=64 ***
+  *** NEW BEST CNN (avg=-3.03) ep=65 ***
+  *** NEW BEST CNN (avg=-3.03) ep=75 ***
+  *** NEW BEST CNN (avg=-3.03) ep=79 ***
+  *** NEW BEST CNN (avg=-3.03) ep=98 ***
+  *** NEW BEST CNN (avg=-3.02) ep=100 ***
+[CNN]   ep=  100  recent=-3.01  best=-3.02
+  *** NEW BEST CNN (avg=-3.01) ep=150 ***
+  *** NEW BEST CNN (avg=-2.98) ep=151 ***
+[CNN]   ep=  200  recent=-3.01  best=-2.98
+[CNN]   ep=  300  recent=-3.02  best=-2.98
+[CNN]   ep=  400  recent=-3.03  best=-2.98
+[CNN]   ep=  500  recent=-2.98  best=-2.98
+  *** NEW BEST CNN (avg=-2.98) ep=512 ***
+  *** NEW BEST CNN (avg=-2.98) ep=542 ***
+  *** NEW BEST CNN (avg=-2.98) ep=550 ***
+  *** NEW BEST CNN (avg=-2.96) ep=551 ***
+[CNN]   ep=  600  recent=-2.97  best=-2.96
+  *** NEW BEST CNN (avg=-2.80) ep=650 ***
+  *** NEW BEST CNN (avg=-2.77) ep=651 ***
+[CNN]   ep=  700  recent=-3.06  best=-2.77
+[CNN]   ep=  800  recent=-3.02  best=-2.77
+[CNN]   ep=  900  recent=-3.04  best=-2.77
+[CNN]   ep= 1000  recent=-3.03  best=-2.77
+[CNN]   ep= 1100  recent=-3.06  best=-2.77
+[CNN]   ep= 1200  recent=-3.06  best=-2.77
+[CNN]   ep= 1300  recent=-3.06  best=-2.77
+[CNN]   ep= 1400  recent=-3.04  best=-2.77
+[CNN]   ep= 1500  recent=-3.04  best=-2.77
+[CNN]   ep= 1600  recent=-3.08  best=-2.77
+[CNN]   ep= 1700  recent=-3.04  best=-2.77
+[CNN]   ep= 1800  recent=-3.01  best=-2.77
+[CNN]   ep= 1900  recent=-3.05  best=-2.77
+[CNN]   ep= 2000  recent=-2.99  best=-2.77
+[CNN]   ep= 2100  recent=-2.99  best=-2.77
+  *** NEW BEST CNN (avg=-2.77) ep=2147 ***
+  *** NEW BEST CNN (avg=-2.75) ep=2148 ***
+[CNN]   ep= 2200  recent=-2.98  best=-2.75
+[CNN]   ep= 2300  recent=-2.99  best=-2.75
+[CNN]   ep= 2400  recent=-2.99  best=-2.75
+
+[train_single] Training done in 484.9 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p0_cnn.pth

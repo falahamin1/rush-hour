@@ -1,0 +1,42 @@
+[train_single] difficulty=15  puzzle_idx=2  method=cnn  episodes=2500
+[train_single] board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[CNN] device=cpu  board=BBooKLFHooKLFHoAAMGCCJoMGoIJDDEEIooo
+[CNN]   ep=    0  recent=-3.16  best=-inf
+  *** NEW BEST CNN (avg=-3.14) ep=2 ***
+  *** NEW BEST CNN (avg=-3.13) ep=5 ***
+  *** NEW BEST CNN (avg=-3.13) ep=61 ***
+  *** NEW BEST CNN (avg=-3.12) ep=62 ***
+[CNN]   ep=  100  recent=-3.14  best=-3.12
+  *** NEW BEST CNN (avg=-3.12) ep=102 ***
+[CNN]   ep=  200  recent=-3.14  best=-3.12
+[CNN]   ep=  300  recent=-3.13  best=-3.12
+  *** NEW BEST CNN (avg=-3.11) ep=303 ***
+[CNN]   ep=  400  recent=-3.15  best=-3.11
+  *** NEW BEST CNN (avg=-3.11) ep=427 ***
+  *** NEW BEST CNN (avg=-3.09) ep=428 ***
+[CNN]   ep=  500  recent=-3.15  best=-3.09
+[CNN]   ep=  600  recent=-3.14  best=-3.09
+[CNN]   ep=  700  recent=-3.16  best=-3.09
+  *** NEW BEST CNN (avg=-3.09) ep=720 ***
+  *** NEW BEST CNN (avg=-3.09) ep=721 ***
+[CNN]   ep=  800  recent=-3.14  best=-3.09
+[CNN]   ep=  900  recent=-3.15  best=-3.09
+[CNN]   ep= 1000  recent=-3.18  best=-3.09
+[CNN]   ep= 1100  recent=-3.13  best=-3.09
+[CNN]   ep= 1200  recent=-3.14  best=-3.09
+[CNN]   ep= 1300  recent=-3.13  best=-3.09
+[CNN]   ep= 1400  recent=-3.14  best=-3.09
+[CNN]   ep= 1500  recent=-3.17  best=-3.09
+[CNN]   ep= 1600  recent=-3.16  best=-3.09
+[CNN]   ep= 1700  recent=-3.15  best=-3.09
+[CNN]   ep= 1800  recent=-3.16  best=-3.09
+[CNN]   ep= 1900  recent=-3.14  best=-3.09
+[CNN]   ep= 2000  recent=-3.17  best=-3.09
+[CNN]   ep= 2100  recent=-3.11  best=-3.09
+[CNN]   ep= 2200  recent=-3.14  best=-3.09
+[CNN]   ep= 2300  recent=-3.14  best=-3.09
+[CNN]   ep= 2400  recent=-3.14  best=-3.09
+
+[train_single] Training done in 564.9 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.05±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p2_cnn.pth

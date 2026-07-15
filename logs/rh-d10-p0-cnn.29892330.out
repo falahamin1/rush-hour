@@ -1,0 +1,36 @@
+[train_single] difficulty=10  puzzle_idx=0  method=cnn  episodes=750
+[train_single] board=oBBCCooooJDDAAoJKoHoEEKLHoIFFLGGIooo
+[CNN] device=cpu  board=oBBCCooooJDDAAoJKoHoEEKLHoIFFLGGIooo
+[CNN]   ep=    0  recent=-1.76  best=-inf
+  *** NEW BEST CNN (avg=-2.17) ep=2 ***
+  *** NEW BEST CNN (avg=-0.51) ep=3 ***
+  *** NEW BEST CNN (avg=1.15) ep=4 ***
+  *** NEW BEST CNN (avg=3.60) ep=5 ***
+  *** NEW BEST CNN (avg=9.15) ep=6 ***
+  *** NEW BEST CNN (avg=10.06) ep=7 ***
+  *** NEW BEST CNN (avg=10.20) ep=8 ***
+  *** NEW BEST CNN (avg=10.27) ep=9 ***
+  *** NEW BEST CNN (avg=10.30) ep=10 ***
+  *** NEW BEST CNN (avg=10.33) ep=11 ***
+  *** NEW BEST CNN (avg=10.33) ep=12 ***
+  *** NEW BEST CNN (avg=10.34) ep=13 ***
+  *** NEW BEST CNN (avg=10.35) ep=14 ***
+  *** NEW BEST CNN (avg=10.36) ep=15 ***
+  *** NEW BEST CNN (avg=10.36) ep=16 ***
+  *** NEW BEST CNN (avg=10.36) ep=25 ***
+  *** NEW BEST CNN (avg=10.36) ep=31 ***
+  *** NEW BEST CNN (avg=10.36) ep=44 ***
+  *** NEW BEST CNN (avg=10.36) ep=48 ***
+  *** NEW BEST CNN (avg=10.36) ep=67 ***
+[CNN]   ep=  100  recent=10.36  best=10.36
+  *** NEW BEST CNN (avg=10.36) ep=154 ***
+[CNN]   ep=  200  recent=10.36  best=10.36
+[CNN]   ep=  300  recent=10.36  best=10.36
+[CNN]   ep=  400  recent=10.36  best=10.36
+[CNN]   ep=  500  recent=10.36  best=10.36
+[CNN]   ep=  600  recent=10.36  best=10.36
+[CNN]   ep=  700  recent=10.35  best=10.36
+
+[train_single] Training done in 203.1 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.37±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p0_cnn.pth
