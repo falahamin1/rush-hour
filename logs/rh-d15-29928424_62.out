@@ -1,0 +1,2 @@
+[task 62] difficulty=15  puzzle_idx=12  method=vrep  episodes=2500
+slurmstepd: error: *** JOB 29928622 ON c3cpu-c15-u26-1 CANCELLED AT 2026-07-15T15:04:04 DUE TO TIME LIMIT ***

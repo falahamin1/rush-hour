@@ -1,0 +1,51 @@
+[task 69] difficulty=10  puzzle_idx=13  method=mlp  episodes=750
+[train_single] difficulty=10  puzzle_idx=13  method=mlp  episodes=750
+[train_single] board=ooBBoJCCooIJGoAAIJGDDDoooooHEEFFoHoo
+[MLP] device=cpu  board=ooBBoJCCooIJGoAAIJGDDDoooooHEEFFoHoo
+[MLP]   ep=    0  recent=-2.96  best=-inf
+  *** NEW BEST MLP (avg=-2.74) ep=2 ***
+  *** NEW BEST MLP (avg=-2.05) ep=3 ***
+  *** NEW BEST MLP (avg=-1.13) ep=4 ***
+  *** NEW BEST MLP (avg=0.47) ep=5 ***
+  *** NEW BEST MLP (avg=0.67) ep=6 ***
+  *** NEW BEST MLP (avg=3.49) ep=7 ***
+  *** NEW BEST MLP (avg=6.99) ep=8 ***
+  *** NEW BEST MLP (avg=7.56) ep=9 ***
+  *** NEW BEST MLP (avg=8.51) ep=10 ***
+  *** NEW BEST MLP (avg=9.29) ep=11 ***
+  *** NEW BEST MLP (avg=9.44) ep=12 ***
+  *** NEW BEST MLP (avg=9.59) ep=13 ***
+  *** NEW BEST MLP (avg=9.79) ep=14 ***
+  *** NEW BEST MLP (avg=9.93) ep=15 ***
+  *** NEW BEST MLP (avg=9.95) ep=17 ***
+  *** NEW BEST MLP (avg=9.97) ep=18 ***
+  *** NEW BEST MLP (avg=10.05) ep=19 ***
+  *** NEW BEST MLP (avg=10.08) ep=20 ***
+  *** NEW BEST MLP (avg=10.11) ep=21 ***
+  *** NEW BEST MLP (avg=10.14) ep=22 ***
+  *** NEW BEST MLP (avg=10.16) ep=23 ***
+  *** NEW BEST MLP (avg=10.17) ep=25 ***
+  *** NEW BEST MLP (avg=10.18) ep=26 ***
+  *** NEW BEST MLP (avg=10.20) ep=27 ***
+  *** NEW BEST MLP (avg=10.21) ep=29 ***
+  *** NEW BEST MLP (avg=10.21) ep=30 ***
+  *** NEW BEST MLP (avg=10.22) ep=32 ***
+  *** NEW BEST MLP (avg=10.22) ep=34 ***
+  *** NEW BEST MLP (avg=10.22) ep=37 ***
+  *** NEW BEST MLP (avg=10.23) ep=38 ***
+  *** NEW BEST MLP (avg=10.23) ep=41 ***
+  *** NEW BEST MLP (avg=10.23) ep=43 ***
+[MLP]   ep=  100  recent=10.22  best=10.23
+[MLP]   ep=  200  recent=10.22  best=10.23
+  *** NEW BEST MLP (avg=10.23) ep=280 ***
+  *** NEW BEST MLP (avg=10.23) ep=299 ***
+[MLP]   ep=  300  recent=10.21  best=10.23
+[MLP]   ep=  400  recent=10.21  best=10.23
+[MLP]   ep=  500  recent=10.21  best=10.23
+[MLP]   ep=  600  recent=10.23  best=10.23
+[MLP]   ep=  700  recent=10.18  best=10.23
+  *** NEW BEST MLP (avg=10.23) ep=721 ***
+
+[train_single] Training done in 155.1 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.23±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p13_mlp.pth

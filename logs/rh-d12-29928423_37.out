@@ -1,0 +1,30 @@
+[task 37] difficulty=12  puzzle_idx=7  method=vrep  episodes=1200
+[train_single] difficulty=12  puzzle_idx=7  method=vrep  episodes=1200
+[train_single] board=FBBoJoFCCoJKoGAAJKoGHIooooHIDDoooEEo
+[V-rep] device=cpu  board=FBBoJoFCCoJKoGAAJKoGHIooooHIDDoooEEo
+[V-rep] ep=    0  recent=-3.00  best=-inf
+  *** NEW BEST V-rep (avg=-3.04) ep=2 ***
+  *** NEW BEST V-rep (avg=-3.03) ep=3 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=4 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=18 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=24 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=25 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=29 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=35 ***
+  *** NEW BEST V-rep (avg=-3.01) ep=51 ***
+  *** NEW BEST V-rep (avg=-3.00) ep=52 ***
+[V-rep] ep=  100  recent=-2.98  best=-3.00
+[V-rep] ep=  200  recent=-3.05  best=-3.00
+[V-rep] ep=  300  recent=-3.06  best=-3.00
+[V-rep] ep=  400  recent=-3.05  best=-3.00
+[V-rep] ep=  500  recent=-3.03  best=-3.00
+[V-rep] ep=  600  recent=-3.05  best=-3.00
+[V-rep] ep=  700  recent=-3.05  best=-3.00
+[V-rep] ep=  800  recent=-3.07  best=-3.00
+[V-rep] ep=  900  recent=-3.05  best=-3.00
+[V-rep] ep= 1000  recent=-3.06  best=-3.00
+[V-rep] ep= 1100  recent=-3.04  best=-3.00
+
+[train_single] Training done in 217.3 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p7_vrep.pth

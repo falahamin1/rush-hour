@@ -1,0 +1,48 @@
+[task 70] difficulty=10  puzzle_idx=13  method=cnn  episodes=750
+[train_single] difficulty=10  puzzle_idx=13  method=cnn  episodes=750
+[train_single] board=ooBBoJCCooIJGoAAIJGDDDoooooHEEFFoHoo
+[CNN] device=cpu  board=ooBBoJCCooIJGoAAIJGDDDoooooHEEFFoHoo
+[CNN]   ep=    0  recent=-2.94  best=-inf
+  *** NEW BEST CNN (avg=-2.74) ep=2 ***
+  *** NEW BEST CNN (avg=-2.27) ep=4 ***
+  *** NEW BEST CNN (avg=-1.38) ep=5 ***
+  *** NEW BEST CNN (avg=-1.15) ep=7 ***
+  *** NEW BEST CNN (avg=0.88) ep=8 ***
+  *** NEW BEST CNN (avg=4.56) ep=9 ***
+  *** NEW BEST CNN (avg=6.02) ep=10 ***
+  *** NEW BEST CNN (avg=7.90) ep=11 ***
+  *** NEW BEST CNN (avg=9.17) ep=12 ***
+  *** NEW BEST CNN (avg=9.72) ep=13 ***
+  *** NEW BEST CNN (avg=9.86) ep=14 ***
+  *** NEW BEST CNN (avg=9.95) ep=15 ***
+  *** NEW BEST CNN (avg=10.04) ep=16 ***
+  *** NEW BEST CNN (avg=10.08) ep=17 ***
+  *** NEW BEST CNN (avg=10.12) ep=18 ***
+  *** NEW BEST CNN (avg=10.16) ep=19 ***
+  *** NEW BEST CNN (avg=10.18) ep=20 ***
+  *** NEW BEST CNN (avg=10.20) ep=21 ***
+  *** NEW BEST CNN (avg=10.21) ep=22 ***
+  *** NEW BEST CNN (avg=10.22) ep=23 ***
+  *** NEW BEST CNN (avg=10.23) ep=24 ***
+  *** NEW BEST CNN (avg=10.23) ep=26 ***
+  *** NEW BEST CNN (avg=10.23) ep=27 ***
+  *** NEW BEST CNN (avg=10.24) ep=28 ***
+  *** NEW BEST CNN (avg=10.24) ep=29 ***
+  *** NEW BEST CNN (avg=10.24) ep=31 ***
+  *** NEW BEST CNN (avg=10.24) ep=32 ***
+  *** NEW BEST CNN (avg=10.24) ep=46 ***
+  *** NEW BEST CNN (avg=10.25) ep=58 ***
+[CNN]   ep=  100  recent=10.24  best=10.25
+  *** NEW BEST CNN (avg=10.25) ep=179 ***
+[CNN]   ep=  200  recent=10.24  best=10.25
+  *** NEW BEST CNN (avg=10.25) ep=217 ***
+[CNN]   ep=  300  recent=10.25  best=10.25
+[CNN]   ep=  400  recent=10.24  best=10.25
+  *** NEW BEST CNN (avg=10.25) ep=433 ***
+[CNN]   ep=  500  recent=10.24  best=10.25
+[CNN]   ep=  600  recent=10.24  best=10.25
+[CNN]   ep=  700  recent=10.25  best=10.25
+
+[train_single] Training done in 183.2 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.25±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p13_cnn.pth

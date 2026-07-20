@@ -1,0 +1,33 @@
+[task 55] difficulty=12  puzzle_idx=10  method=cnn  episodes=1200
+[train_single] difficulty=12  puzzle_idx=10  method=cnn  episodes=1200
+[train_single] board=GBBoKoGoIoKLAAIooLoHCCDDoHoJEEFFoJoo
+[CNN] device=cpu  board=GBBoKoGoIoKLAAIooLoHCCDDoHoJEEFFoJoo
+[CNN]   ep=    0  recent=-2.83  best=-inf
+  *** NEW BEST CNN (avg=-0.32) ep=2 ***
+  *** NEW BEST CNN (avg=5.88) ep=3 ***
+  *** NEW BEST CNN (avg=9.59) ep=4 ***
+  *** NEW BEST CNN (avg=9.98) ep=5 ***
+  *** NEW BEST CNN (avg=10.15) ep=6 ***
+  *** NEW BEST CNN (avg=10.24) ep=7 ***
+  *** NEW BEST CNN (avg=10.27) ep=8 ***
+  *** NEW BEST CNN (avg=10.30) ep=9 ***
+  *** NEW BEST CNN (avg=10.30) ep=10 ***
+  *** NEW BEST CNN (avg=10.31) ep=11 ***
+  *** NEW BEST CNN (avg=10.31) ep=12 ***
+  *** NEW BEST CNN (avg=10.31) ep=13 ***
+  *** NEW BEST CNN (avg=10.32) ep=18 ***
+[CNN]   ep=  100  recent=10.25  best=10.32
+[CNN]   ep=  200  recent=10.21  best=10.32
+[CNN]   ep=  300  recent=10.28  best=10.32
+[CNN]   ep=  400  recent=10.25  best=10.32
+[CNN]   ep=  500  recent=10.31  best=10.32
+[CNN]   ep=  600  recent=10.30  best=10.32
+[CNN]   ep=  700  recent=10.30  best=10.32
+[CNN]   ep=  800  recent=10.31  best=10.32
+[CNN]   ep=  900  recent=10.14  best=10.32
+[CNN]   ep= 1000  recent=10.29  best=10.32
+[CNN]   ep= 1100  recent=10.19  best=10.32
+
+[train_single] Training done in 259.8 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.32±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p10_cnn.pth

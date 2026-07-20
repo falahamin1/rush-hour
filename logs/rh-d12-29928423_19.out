@@ -1,0 +1,31 @@
+[task 19] difficulty=12  puzzle_idx=3  method=mlp  episodes=1200
+[train_single] difficulty=12  puzzle_idx=3  method=mlp  episodes=1200
+[train_single] board=oGHoBBoGHCCoAAHoooFooIJKFDDIJKoEEooo
+[MLP] device=cpu  board=oGHoBBoGHCCoAAHoooFooIJKFDDIJKoEEooo
+[MLP]   ep=    0  recent=-2.80  best=-inf
+  *** NEW BEST MLP (avg=-2.85) ep=2 ***
+  *** NEW BEST MLP (avg=-2.85) ep=18 ***
+  *** NEW BEST MLP (avg=-2.85) ep=27 ***
+  *** NEW BEST MLP (avg=-2.84) ep=28 ***
+  *** NEW BEST MLP (avg=-2.84) ep=36 ***
+  *** NEW BEST MLP (avg=-2.84) ep=55 ***
+  *** NEW BEST MLP (avg=-2.83) ep=56 ***
+  *** NEW BEST MLP (avg=-2.83) ep=58 ***
+  *** NEW BEST MLP (avg=-2.82) ep=59 ***
+  *** NEW BEST MLP (avg=-2.82) ep=61 ***
+  *** NEW BEST MLP (avg=-2.82) ep=62 ***
+[MLP]   ep=  100  recent=-2.89  best=-2.82
+[MLP]   ep=  200  recent=-2.84  best=-2.82
+[MLP]   ep=  300  recent=-2.87  best=-2.82
+[MLP]   ep=  400  recent=-2.87  best=-2.82
+[MLP]   ep=  500  recent=-2.82  best=-2.82
+[MLP]   ep=  600  recent=-2.81  best=-2.82
+[MLP]   ep=  700  recent=-2.86  best=-2.82
+[MLP]   ep=  800  recent=-2.87  best=-2.82
+[MLP]   ep=  900  recent=-2.84  best=-2.82
+[MLP]   ep= 1000  recent=-2.90  best=-2.82
+[MLP]   ep= 1100  recent=-2.87  best=-2.82
+
+[train_single] Training done in 184.5 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.92±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p3_mlp.pth

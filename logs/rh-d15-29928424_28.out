@@ -1,0 +1,2 @@
+[task 28] difficulty=15  puzzle_idx=5  method=gnn  episodes=2500
+slurmstepd: error: *** JOB 29928552 ON c3cpu-c13-u7-1 CANCELLED AT 2026-07-15T15:03:04 DUE TO TIME LIMIT ***

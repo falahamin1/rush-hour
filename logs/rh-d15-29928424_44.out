@@ -1,0 +1,45 @@
+[task 44] difficulty=15  puzzle_idx=8  method=mlp  episodes=2500
+[train_single] difficulty=15  puzzle_idx=8  method=mlp  episodes=2500
+[train_single] board=BBJoooGoJoLxGAAoLMHIDDoMHIoKEEFFoKoo
+[MLP] device=cpu  board=BBJoooGoJoLxGAAoLMHIDDoMHIoKEEFFoKoo
+[MLP]   ep=    0  recent=8.06  best=-inf
+  *** NEW BEST MLP (avg=10.10) ep=1 ***
+  *** NEW BEST MLP (avg=10.36) ep=2 ***
+  *** NEW BEST MLP (avg=10.39) ep=3 ***
+  *** NEW BEST MLP (avg=10.41) ep=4 ***
+  *** NEW BEST MLP (avg=10.42) ep=5 ***
+  *** NEW BEST MLP (avg=10.43) ep=6 ***
+  *** NEW BEST MLP (avg=10.44) ep=8 ***
+  *** NEW BEST MLP (avg=10.44) ep=10 ***
+  *** NEW BEST MLP (avg=10.45) ep=11 ***
+  *** NEW BEST MLP (avg=10.45) ep=12 ***
+  *** NEW BEST MLP (avg=10.45) ep=30 ***
+[MLP]   ep=  100  recent=10.45  best=10.45
+[MLP]   ep=  200  recent=10.45  best=10.45
+[MLP]   ep=  300  recent=10.45  best=10.45
+[MLP]   ep=  400  recent=10.45  best=10.45
+[MLP]   ep=  500  recent=-2.91  best=10.45
+[MLP]   ep=  600  recent=10.45  best=10.45
+[MLP]   ep=  700  recent=10.45  best=10.45
+  *** NEW BEST MLP (avg=10.45) ep=771 ***
+[MLP]   ep=  800  recent=10.45  best=10.45
+[MLP]   ep=  900  recent=10.44  best=10.45
+[MLP]   ep= 1000  recent=10.45  best=10.45
+[MLP]   ep= 1100  recent=10.45  best=10.45
+[MLP]   ep= 1200  recent=10.45  best=10.45
+[MLP]   ep= 1300  recent=10.45  best=10.45
+[MLP]   ep= 1400  recent=10.45  best=10.45
+[MLP]   ep= 1500  recent=10.45  best=10.45
+[MLP]   ep= 1600  recent=10.45  best=10.45
+[MLP]   ep= 1700  recent=10.45  best=10.45
+[MLP]   ep= 1800  recent=10.45  best=10.45
+[MLP]   ep= 1900  recent=10.45  best=10.45
+[MLP]   ep= 2000  recent=10.45  best=10.45
+[MLP]   ep= 2100  recent=10.44  best=10.45
+[MLP]   ep= 2200  recent=10.45  best=10.45
+[MLP]   ep= 2300  recent=10.45  best=10.45
+[MLP]   ep= 2400  recent=10.44  best=10.45
+
+[train_single] Training done in 799.9 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.45±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p8_mlp.pth

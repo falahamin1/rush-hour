@@ -1,0 +1,25 @@
+[task 38] difficulty=12  puzzle_idx=7  method=gnn  episodes=1200
+[train_single] difficulty=12  puzzle_idx=7  method=gnn  episodes=1200
+[train_single] board=FBBoJoFCCoJKoGAAJKoGHIooooHIDDoooEEo
+[GNN] device=cpu  board=FBBoJoFCCoJKoGAAJKoGHIooooHIDDoooEEo
+[GNN]   ep=    0  recent=-2.91  best=-inf
+  *** NEW BEST GNN (avg=-3.00) ep=2 ***
+  *** NEW BEST GNN (avg=-2.99) ep=11 ***
+[GNN]   ep=  100  recent=-3.02  best=-2.99
+  *** NEW BEST GNN (avg=-2.98) ep=101 ***
+[GNN]   ep=  200  recent=-2.99  best=-2.98
+  *** NEW BEST GNN (avg=-2.98) ep=253 ***
+[GNN]   ep=  300  recent=-3.01  best=-2.98
+[GNN]   ep=  400  recent=-3.04  best=-2.98
+[GNN]   ep=  500  recent=-3.02  best=-2.98
+[GNN]   ep=  600  recent=-3.09  best=-2.98
+[GNN]   ep=  700  recent=-3.04  best=-2.98
+[GNN]   ep=  800  recent=-3.04  best=-2.98
+[GNN]   ep=  900  recent=-3.02  best=-2.98
+[GNN]   ep= 1000  recent=-3.06  best=-2.98
+[GNN]   ep= 1100  recent=-3.04  best=-2.98
+  *** NEW BEST GNN (avg=-2.98) ep=1102 ***
+
+[train_single] Training done in 293.0 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p7_gnn.pth

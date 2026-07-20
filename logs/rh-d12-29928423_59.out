@@ -1,0 +1,49 @@
+[task 59] difficulty=12  puzzle_idx=11  method=mlp  episodes=1200
+[train_single] difficulty=12  puzzle_idx=11  method=mlp  episodes=1200
+[train_single] board=oHBBoLoHCCKLAAooKLGoIJooGoIJDDooEEFF
+[MLP] device=cpu  board=oHBBoLoHCCKLAAooKLGoIJooGoIJDDooEEFF
+[MLP]   ep=    0  recent=-2.78  best=-inf
+  *** NEW BEST MLP (avg=-1.40) ep=2 ***
+  *** NEW BEST MLP (avg=1.16) ep=3 ***
+  *** NEW BEST MLP (avg=4.94) ep=4 ***
+  *** NEW BEST MLP (avg=7.11) ep=5 ***
+  *** NEW BEST MLP (avg=9.54) ep=6 ***
+  *** NEW BEST MLP (avg=9.79) ep=9 ***
+  *** NEW BEST MLP (avg=10.06) ep=12 ***
+  *** NEW BEST MLP (avg=10.18) ep=13 ***
+  *** NEW BEST MLP (avg=10.20) ep=15 ***
+  *** NEW BEST MLP (avg=10.21) ep=16 ***
+  *** NEW BEST MLP (avg=10.25) ep=17 ***
+  *** NEW BEST MLP (avg=10.26) ep=18 ***
+  *** NEW BEST MLP (avg=10.26) ep=20 ***
+  *** NEW BEST MLP (avg=10.26) ep=21 ***
+  *** NEW BEST MLP (avg=10.27) ep=22 ***
+  *** NEW BEST MLP (avg=10.27) ep=23 ***
+  *** NEW BEST MLP (avg=10.28) ep=24 ***
+  *** NEW BEST MLP (avg=10.29) ep=26 ***
+  *** NEW BEST MLP (avg=10.29) ep=28 ***
+  *** NEW BEST MLP (avg=10.31) ep=32 ***
+  *** NEW BEST MLP (avg=10.31) ep=43 ***
+  *** NEW BEST MLP (avg=10.31) ep=46 ***
+  *** NEW BEST MLP (avg=10.31) ep=51 ***
+  *** NEW BEST MLP (avg=10.32) ep=56 ***
+  *** NEW BEST MLP (avg=10.32) ep=76 ***
+  *** NEW BEST MLP (avg=10.32) ep=78 ***
+  *** NEW BEST MLP (avg=10.32) ep=79 ***
+[MLP]   ep=  100  recent=10.32  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=102 ***
+  *** NEW BEST MLP (avg=10.32) ep=103 ***
+[MLP]   ep=  200  recent=10.31  best=10.32
+[MLP]   ep=  300  recent=10.32  best=10.32
+[MLP]   ep=  400  recent=10.32  best=10.32
+[MLP]   ep=  500  recent=10.28  best=10.32
+[MLP]   ep=  600  recent=10.30  best=10.32
+[MLP]   ep=  700  recent=10.05  best=10.32
+[MLP]   ep=  800  recent=10.29  best=10.32
+[MLP]   ep=  900  recent=10.31  best=10.32
+[MLP]   ep= 1000  recent=10.30  best=10.32
+[MLP]   ep= 1100  recent=10.31  best=10.32
+
+[train_single] Training done in 232.3 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.32±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p11_mlp.pth

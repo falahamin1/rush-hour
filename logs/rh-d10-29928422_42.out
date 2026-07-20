@@ -1,0 +1,48 @@
+[task 42] difficulty=10  puzzle_idx=8  method=vrep  episodes=750
+[train_single] difficulty=10  puzzle_idx=8  method=vrep  episodes=750
+[train_single] board=ooBBooFoooIJFoAAIJooGCCJooGHDDoEEHoo
+[V-rep] device=cpu  board=ooBBooFoooIJFoAAIJooGCCJooGHDDoEEHoo
+[V-rep] ep=    0  recent=-2.92  best=-inf
+  *** NEW BEST V-rep (avg=-3.02) ep=2 ***
+  *** NEW BEST V-rep (avg=-2.12) ep=3 ***
+  *** NEW BEST V-rep (avg=-2.10) ep=4 ***
+  *** NEW BEST V-rep (avg=-1.84) ep=9 ***
+  *** NEW BEST V-rep (avg=-0.01) ep=10 ***
+  *** NEW BEST V-rep (avg=1.04) ep=11 ***
+  *** NEW BEST V-rep (avg=1.12) ep=12 ***
+  *** NEW BEST V-rep (avg=4.50) ep=13 ***
+  *** NEW BEST V-rep (avg=5.12) ep=15 ***
+  *** NEW BEST V-rep (avg=7.25) ep=16 ***
+  *** NEW BEST V-rep (avg=7.84) ep=17 ***
+  *** NEW BEST V-rep (avg=8.64) ep=18 ***
+  *** NEW BEST V-rep (avg=9.19) ep=19 ***
+  *** NEW BEST V-rep (avg=9.45) ep=20 ***
+  *** NEW BEST V-rep (avg=9.71) ep=21 ***
+  *** NEW BEST V-rep (avg=9.80) ep=24 ***
+  *** NEW BEST V-rep (avg=9.85) ep=26 ***
+  *** NEW BEST V-rep (avg=9.97) ep=27 ***
+  *** NEW BEST V-rep (avg=10.12) ep=29 ***
+  *** NEW BEST V-rep (avg=10.14) ep=30 ***
+  *** NEW BEST V-rep (avg=10.17) ep=31 ***
+  *** NEW BEST V-rep (avg=10.18) ep=32 ***
+  *** NEW BEST V-rep (avg=10.22) ep=33 ***
+  *** NEW BEST V-rep (avg=10.22) ep=34 ***
+  *** NEW BEST V-rep (avg=10.24) ep=35 ***
+  *** NEW BEST V-rep (avg=10.24) ep=36 ***
+  *** NEW BEST V-rep (avg=10.25) ep=37 ***
+  *** NEW BEST V-rep (avg=10.26) ep=44 ***
+  *** NEW BEST V-rep (avg=10.26) ep=47 ***
+  *** NEW BEST V-rep (avg=10.27) ep=52 ***
+  *** NEW BEST V-rep (avg=10.27) ep=84 ***
+[V-rep] ep=  100  recent=10.26  best=10.27
+[V-rep] ep=  200  recent=10.26  best=10.27
+[V-rep] ep=  300  recent=10.26  best=10.27
+  *** NEW BEST V-rep (avg=10.27) ep=383 ***
+[V-rep] ep=  400  recent=10.26  best=10.27
+[V-rep] ep=  500  recent=10.22  best=10.27
+[V-rep] ep=  600  recent=10.25  best=10.27
+[V-rep] ep=  700  recent=10.25  best=10.27
+
+[train_single] Training done in 184.4 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.28±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p8_vrep.pth

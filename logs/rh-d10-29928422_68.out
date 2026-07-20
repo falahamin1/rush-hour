@@ -1,0 +1,17 @@
+[task 68] difficulty=10  puzzle_idx=13  method=gnn  episodes=750
+[train_single] difficulty=10  puzzle_idx=13  method=gnn  episodes=750
+[train_single] board=ooBBoJCCooIJGoAAIJGDDDoooooHEEFFoHoo
+[GNN] device=cpu  board=ooBBoJCCooIJGoAAIJGDDDoooooHEEFFoHoo
+[GNN]   ep=    0  recent=-1.79  best=-inf
+  *** NEW BEST GNN (avg=-2.50) ep=2 ***
+[GNN]   ep=  100  recent=-3.06  best=-2.50
+[GNN]   ep=  200  recent=-3.05  best=-2.50
+[GNN]   ep=  300  recent=-3.04  best=-2.50
+[GNN]   ep=  400  recent=-3.05  best=-2.50
+[GNN]   ep=  500  recent=-3.04  best=-2.50
+[GNN]   ep=  600  recent=-3.03  best=-2.50
+[GNN]   ep=  700  recent=-3.08  best=-2.50
+
+[train_single] Training done in 158.9 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.92±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p13_gnn.pth

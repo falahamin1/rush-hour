@@ -1,0 +1,27 @@
+[task 39] difficulty=12  puzzle_idx=7  method=mlp  episodes=1200
+[train_single] difficulty=12  puzzle_idx=7  method=mlp  episodes=1200
+[train_single] board=FBBoJoFCCoJKoGAAJKoGHIooooHIDDoooEEo
+[MLP] device=cpu  board=FBBoJoFCCoJKoGAAJKoGHIooooHIDDoooEEo
+[MLP]   ep=    0  recent=-2.94  best=-inf
+  *** NEW BEST MLP (avg=-2.98) ep=2 ***
+  *** NEW BEST MLP (avg=-2.97) ep=14 ***
+  *** NEW BEST MLP (avg=-2.97) ep=15 ***
+  *** NEW BEST MLP (avg=-2.97) ep=22 ***
+  *** NEW BEST MLP (avg=-2.96) ep=23 ***
+  *** NEW BEST MLP (avg=-2.95) ep=24 ***
+  *** NEW BEST MLP (avg=-2.95) ep=26 ***
+[MLP]   ep=  100  recent=-3.01  best=-2.95
+[MLP]   ep=  200  recent=-2.99  best=-2.95
+[MLP]   ep=  300  recent=-3.02  best=-2.95
+[MLP]   ep=  400  recent=-3.03  best=-2.95
+[MLP]   ep=  500  recent=-3.03  best=-2.95
+[MLP]   ep=  600  recent=-3.02  best=-2.95
+[MLP]   ep=  700  recent=-3.03  best=-2.95
+[MLP]   ep=  800  recent=-3.06  best=-2.95
+[MLP]   ep=  900  recent=-3.03  best=-2.95
+[MLP]   ep= 1000  recent=-3.01  best=-2.95
+[MLP]   ep= 1100  recent=-3.04  best=-2.95
+
+[train_single] Training done in 206.4 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p7_mlp.pth

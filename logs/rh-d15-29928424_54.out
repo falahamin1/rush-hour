@@ -1,0 +1,41 @@
+[task 54] difficulty=15  puzzle_idx=10  method=mlp  episodes=2500
+[train_single] difficulty=15  puzzle_idx=10  method=mlp  episodes=2500
+[train_single] board=xCCoKLoHooKLGHoAAMGDDooMooIJEEFFIJoo
+[MLP] device=cpu  board=xCCoKLoHooKLGHoAAMGDDooMooIJEEFFIJoo
+[MLP]   ep=    0  recent=-3.06  best=-inf
+  *** NEW BEST MLP (avg=-3.14) ep=2 ***
+  *** NEW BEST MLP (avg=-3.14) ep=20 ***
+  *** NEW BEST MLP (avg=-3.14) ep=21 ***
+  *** NEW BEST MLP (avg=-3.13) ep=22 ***
+  *** NEW BEST MLP (avg=-3.13) ep=23 ***
+  *** NEW BEST MLP (avg=-3.12) ep=24 ***
+[MLP]   ep=  100  recent=-3.17  best=-3.12
+  *** NEW BEST MLP (avg=-3.10) ep=123 ***
+[MLP]   ep=  200  recent=-3.14  best=-3.10
+[MLP]   ep=  300  recent=-3.16  best=-3.10
+[MLP]   ep=  400  recent=-3.15  best=-3.10
+[MLP]   ep=  500  recent=-3.15  best=-3.10
+[MLP]   ep=  600  recent=-3.10  best=-3.10
+[MLP]   ep=  700  recent=-3.18  best=-3.10
+[MLP]   ep=  800  recent=-3.11  best=-3.10
+[MLP]   ep=  900  recent=-3.15  best=-3.10
+[MLP]   ep= 1000  recent=-3.16  best=-3.10
+[MLP]   ep= 1100  recent=-3.13  best=-3.10
+[MLP]   ep= 1200  recent=-3.19  best=-3.10
+[MLP]   ep= 1300  recent=-3.18  best=-3.10
+[MLP]   ep= 1400  recent=-3.13  best=-3.10
+[MLP]   ep= 1500  recent=-3.12  best=-3.10
+  *** NEW BEST MLP (avg=-3.10) ep=1521 ***
+[MLP]   ep= 1600  recent=-3.18  best=-3.10
+[MLP]   ep= 1700  recent=-3.14  best=-3.10
+[MLP]   ep= 1800  recent=-3.16  best=-3.10
+[MLP]   ep= 1900  recent=-3.14  best=-3.10
+[MLP]   ep= 2000  recent=-3.18  best=-3.10
+[MLP]   ep= 2100  recent=-3.15  best=-3.10
+[MLP]   ep= 2200  recent=-3.14  best=-3.10
+[MLP]   ep= 2300  recent=-3.17  best=-3.10
+[MLP]   ep= 2400  recent=-3.16  best=-3.10
+
+[train_single] Training done in 368.7 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.17±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p10_mlp.pth

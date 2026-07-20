@@ -1,0 +1,21 @@
+[task 66] difficulty=12  puzzle_idx=13  method=hrep  episodes=1200
+[train_single] difficulty=12  puzzle_idx=13  method=hrep  episodes=1200
+[train_single] board=xHCCKLGHDDKLGAAJoLooIJooooIEEoooooFF
+[H-rep] device=cpu  board=xHCCKLGHDDKLGAAJoLooIJooooIEEoooooFF
+[H-rep] ep=    0  recent=-1.68  best=-inf
+  *** NEW BEST H-rep (avg=-2.19) ep=2 ***
+[H-rep] ep=  100  recent=-3.00  best=-2.19
+[H-rep] ep=  200  recent=-3.04  best=-2.19
+[H-rep] ep=  300  recent=-3.03  best=-2.19
+[H-rep] ep=  400  recent=-3.01  best=-2.19
+[H-rep] ep=  500  recent=-3.02  best=-2.19
+[H-rep] ep=  600  recent=-3.00  best=-2.19
+[H-rep] ep=  700  recent=-3.02  best=-2.19
+[H-rep] ep=  800  recent=-3.00  best=-2.19
+[H-rep] ep=  900  recent=-3.01  best=-2.19
+[H-rep] ep= 1000  recent=-3.01  best=-2.19
+[H-rep] ep= 1100  recent=-3.03  best=-2.19
+
+[train_single] Training done in 203.8 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.00±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p13_hrep.pth

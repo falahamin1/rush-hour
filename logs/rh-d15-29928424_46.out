@@ -1,0 +1,40 @@
+[task 46] difficulty=15  puzzle_idx=9  method=hrep  episodes=2500
+[train_single] difficulty=15  puzzle_idx=9  method=hrep  episodes=2500
+[train_single] board=BBooKLxHooKLGHoAAMGDDJoMooIJEEFFIooo
+[H-rep] device=cpu  board=BBooKLxHooKLGHoAAMGDDJoMooIJEEFFIooo
+[H-rep] ep=    0  recent=-3.10  best=-inf
+  *** NEW BEST H-rep (avg=-3.14) ep=2 ***
+  *** NEW BEST H-rep (avg=-3.14) ep=86 ***
+  *** NEW BEST H-rep (avg=-3.13) ep=87 ***
+  *** NEW BEST H-rep (avg=-3.12) ep=91 ***
+  *** NEW BEST H-rep (avg=-3.11) ep=95 ***
+  *** NEW BEST H-rep (avg=-3.09) ep=96 ***
+  *** NEW BEST H-rep (avg=-3.09) ep=97 ***
+[H-rep] ep=  100  recent=-3.06  best=-3.09
+[H-rep] ep=  200  recent=-3.12  best=-3.09
+[H-rep] ep=  300  recent=-3.16  best=-3.09
+[H-rep] ep=  400  recent=-3.17  best=-3.09
+[H-rep] ep=  500  recent=-3.15  best=-3.09
+[H-rep] ep=  600  recent=-3.18  best=-3.09
+[H-rep] ep=  700  recent=-3.15  best=-3.09
+[H-rep] ep=  800  recent=-3.17  best=-3.09
+[H-rep] ep=  900  recent=-3.16  best=-3.09
+[H-rep] ep= 1000  recent=-3.14  best=-3.09
+[H-rep] ep= 1100  recent=-3.13  best=-3.09
+[H-rep] ep= 1200  recent=-3.11  best=-3.09
+[H-rep] ep= 1300  recent=-3.14  best=-3.09
+[H-rep] ep= 1400  recent=-3.12  best=-3.09
+[H-rep] ep= 1500  recent=-3.14  best=-3.09
+[H-rep] ep= 1600  recent=-3.17  best=-3.09
+[H-rep] ep= 1700  recent=-3.14  best=-3.09
+[H-rep] ep= 1800  recent=-3.12  best=-3.09
+[H-rep] ep= 1900  recent=-3.22  best=-3.09
+[H-rep] ep= 2000  recent=-3.15  best=-3.09
+[H-rep] ep= 2100  recent=-3.15  best=-3.09
+[H-rep] ep= 2200  recent=-3.15  best=-3.09
+[H-rep] ep= 2300  recent=-3.16  best=-3.09
+[H-rep] ep= 2400  recent=-3.13  best=-3.09
+
+[train_single] Training done in 355.0 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.05±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p9_hrep.pth

@@ -1,0 +1,45 @@
+[task 23] difficulty=15  puzzle_idx=4  method=gnn  episodes=2500
+[train_single] difficulty=15  puzzle_idx=4  method=gnn  episodes=2500
+[train_single] board=BBoJoooHoJCCGHAAKLGDDoKLooIEEEFFIooo
+[GNN] device=cpu  board=BBoJoooHoJCCGHAAKLGDDoKLooIEEEFFIooo
+[GNN]   ep=    0  recent=-2.91  best=-inf
+  *** NEW BEST GNN (avg=-2.93) ep=2 ***
+  *** NEW BEST GNN (avg=-2.92) ep=14 ***
+  *** NEW BEST GNN (avg=-2.92) ep=15 ***
+[GNN]   ep=  100  recent=-2.93  best=-2.92
+  *** NEW BEST GNN (avg=-2.92) ep=190 ***
+  *** NEW BEST GNN (avg=-2.92) ep=191 ***
+[GNN]   ep=  200  recent=-2.92  best=-2.92
+[GNN]   ep=  300  recent=-2.92  best=-2.92
+  *** NEW BEST GNN (avg=-2.92) ep=351 ***
+  *** NEW BEST GNN (avg=-2.92) ep=376 ***
+  *** NEW BEST GNN (avg=-2.92) ep=377 ***
+[GNN]   ep=  400  recent=-2.92  best=-2.92
+  *** NEW BEST GNN (avg=-2.91) ep=426 ***
+[GNN]   ep=  500  recent=-2.95  best=-2.91
+  *** NEW BEST GNN (avg=-2.91) ep=504 ***
+[GNN]   ep=  600  recent=-2.91  best=-2.91
+[GNN]   ep=  700  recent=-2.95  best=-2.91
+[GNN]   ep=  800  recent=-2.93  best=-2.91
+[GNN]   ep=  900  recent=-2.92  best=-2.91
+[GNN]   ep= 1000  recent=-2.94  best=-2.91
+[GNN]   ep= 1100  recent=-2.93  best=-2.91
+[GNN]   ep= 1200  recent=-2.94  best=-2.91
+[GNN]   ep= 1300  recent=-2.93  best=-2.91
+[GNN]   ep= 1400  recent=-2.92  best=-2.91
+[GNN]   ep= 1500  recent=-2.91  best=-2.91
+[GNN]   ep= 1600  recent=-2.93  best=-2.91
+[GNN]   ep= 1700  recent=-2.92  best=-2.91
+[GNN]   ep= 1800  recent=-2.93  best=-2.91
+  *** NEW BEST GNN (avg=-2.71) ep=1825 ***
+  *** NEW BEST GNN (avg=-2.70) ep=1826 ***
+[GNN]   ep= 1900  recent=-2.92  best=-2.70
+[GNN]   ep= 2000  recent=-2.93  best=-2.70
+[GNN]   ep= 2100  recent=-2.93  best=-2.70
+[GNN]   ep= 2200  recent=-2.93  best=-2.70
+[GNN]   ep= 2300  recent=-2.92  best=-2.70
+[GNN]   ep= 2400  recent=-2.93  best=-2.70
+
+[train_single] Training done in 654.9 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.93±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p4_gnn.pth

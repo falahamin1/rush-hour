@@ -1,0 +1,2 @@
+[task 3] difficulty=10  puzzle_idx=0  method=gnn  episodes=750
+[train_single] /projects/amfa5003/rush-hour/policies/d10_p0_gnn.pth already exists — skipping.

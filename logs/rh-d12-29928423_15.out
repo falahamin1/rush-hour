@@ -1,0 +1,2 @@
+[task 15] difficulty=12  puzzle_idx=2  method=cnn  episodes=1200
+[train_single] /projects/amfa5003/rush-hour/policies/d12_p2_cnn.pth already exists — skipping.

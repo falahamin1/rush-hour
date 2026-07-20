@@ -1,0 +1,2 @@
+[task 65] difficulty=15  puzzle_idx=12  method=cnn  episodes=2500
+slurmstepd: error: *** JOB 29928625 ON c3cpu-c15-u28-2 CANCELLED AT 2026-07-15T15:04:04 DUE TO TIME LIMIT ***

@@ -1,0 +1,24 @@
+[task 20] difficulty=12  puzzle_idx=3  method=cnn  episodes=1200
+[train_single] difficulty=12  puzzle_idx=3  method=cnn  episodes=1200
+[train_single] board=oGHoBBoGHCCoAAHoooFooIJKFDDIJKoEEooo
+[CNN] device=cpu  board=oGHoBBoGHCCoAAHoooFooIJKFDDIJKoEEooo
+[CNN]   ep=    0  recent=-2.81  best=-inf
+  *** NEW BEST CNN (avg=-2.84) ep=2 ***
+  *** NEW BEST CNN (avg=-2.83) ep=44 ***
+  *** NEW BEST CNN (avg=-2.83) ep=46 ***
+[CNN]   ep=  100  recent=-2.88  best=-2.83
+[CNN]   ep=  200  recent=-2.87  best=-2.83
+[CNN]   ep=  300  recent=-2.89  best=-2.83
+  *** NEW BEST CNN (avg=-2.82) ep=353 ***
+[CNN]   ep=  400  recent=-2.84  best=-2.82
+[CNN]   ep=  500  recent=-2.81  best=-2.82
+[CNN]   ep=  600  recent=-2.89  best=-2.82
+[CNN]   ep=  700  recent=-2.84  best=-2.82
+[CNN]   ep=  800  recent=-2.87  best=-2.82
+[CNN]   ep=  900  recent=-2.85  best=-2.82
+[CNN]   ep= 1000  recent=-2.89  best=-2.82
+[CNN]   ep= 1100  recent=-2.90  best=-2.82
+
+[train_single] Training done in 225.1 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.89±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p3_cnn.pth

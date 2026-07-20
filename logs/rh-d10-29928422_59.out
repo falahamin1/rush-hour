@@ -1,0 +1,48 @@
+[task 59] difficulty=10  puzzle_idx=11  method=mlp  episodes=750
+[train_single] difficulty=10  puzzle_idx=11  method=mlp  episodes=750
+[train_single] board=xxoKDDIooKEEIoAALoooFFLMooJGGMHHJooo
+[MLP] device=cpu  board=xxoKDDIooKEEIoAALoooFFLMooJGGMHHJooo
+[MLP]   ep=    0  recent=-1.92  best=-inf
+  *** NEW BEST MLP (avg=-0.81) ep=2 ***
+  *** NEW BEST MLP (avg=1.05) ep=3 ***
+  *** NEW BEST MLP (avg=4.31) ep=4 ***
+  *** NEW BEST MLP (avg=6.90) ep=5 ***
+  *** NEW BEST MLP (avg=7.38) ep=6 ***
+  *** NEW BEST MLP (avg=8.37) ep=7 ***
+  *** NEW BEST MLP (avg=9.56) ep=8 ***
+  *** NEW BEST MLP (avg=9.82) ep=9 ***
+  *** NEW BEST MLP (avg=9.89) ep=10 ***
+  *** NEW BEST MLP (avg=9.93) ep=11 ***
+  *** NEW BEST MLP (avg=9.96) ep=12 ***
+  *** NEW BEST MLP (avg=10.02) ep=13 ***
+  *** NEW BEST MLP (avg=10.03) ep=14 ***
+  *** NEW BEST MLP (avg=10.04) ep=15 ***
+  *** NEW BEST MLP (avg=10.05) ep=16 ***
+  *** NEW BEST MLP (avg=10.06) ep=17 ***
+  *** NEW BEST MLP (avg=10.07) ep=20 ***
+  *** NEW BEST MLP (avg=10.07) ep=21 ***
+  *** NEW BEST MLP (avg=10.07) ep=23 ***
+  *** NEW BEST MLP (avg=10.07) ep=24 ***
+  *** NEW BEST MLP (avg=10.08) ep=25 ***
+  *** NEW BEST MLP (avg=10.08) ep=27 ***
+  *** NEW BEST MLP (avg=10.08) ep=29 ***
+  *** NEW BEST MLP (avg=10.08) ep=30 ***
+  *** NEW BEST MLP (avg=10.08) ep=34 ***
+  *** NEW BEST MLP (avg=10.08) ep=38 ***
+  *** NEW BEST MLP (avg=10.08) ep=39 ***
+[MLP]   ep=  100  recent=10.08  best=10.08
+  *** NEW BEST MLP (avg=10.08) ep=110 ***
+  *** NEW BEST MLP (avg=10.08) ep=129 ***
+[MLP]   ep=  200  recent=10.08  best=10.08
+[MLP]   ep=  300  recent=10.03  best=10.08
+[MLP]   ep=  400  recent=10.07  best=10.08
+  *** NEW BEST MLP (avg=10.09) ep=433 ***
+[MLP]   ep=  500  recent=10.08  best=10.09
+[MLP]   ep=  600  recent=10.05  best=10.09
+[MLP]   ep=  700  recent=10.09  best=10.09
+  *** NEW BEST MLP (avg=10.09) ep=714 ***
+  *** NEW BEST MLP (avg=10.09) ep=720 ***
+
+[train_single] Training done in 178.9 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.09±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p11_mlp.pth

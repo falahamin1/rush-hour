@@ -1,0 +1,54 @@
+[task 30] difficulty=15  puzzle_idx=5  method=cnn  episodes=2500
+[train_single] difficulty=15  puzzle_idx=5  method=cnn  episodes=2500
+[train_single] board=BBJooxHoJoLxHAAoLMoIEEoMoIoKFFGGoKoo
+[CNN] device=cpu  board=BBJooxHoJoLxHAAoLMoIEEoMoIoKFFGGoKoo
+[CNN]   ep=    0  recent=6.84  best=-inf
+  *** NEW BEST CNN (avg=10.07) ep=1 ***
+  *** NEW BEST CNN (avg=10.30) ep=2 ***
+  *** NEW BEST CNN (avg=10.37) ep=3 ***
+  *** NEW BEST CNN (avg=10.40) ep=4 ***
+  *** NEW BEST CNN (avg=10.42) ep=5 ***
+  *** NEW BEST CNN (avg=10.43) ep=6 ***
+  *** NEW BEST CNN (avg=10.44) ep=7 ***
+  *** NEW BEST CNN (avg=10.45) ep=9 ***
+  *** NEW BEST CNN (avg=10.45) ep=12 ***
+  *** NEW BEST CNN (avg=10.45) ep=13 ***
+  *** NEW BEST CNN (avg=10.45) ep=14 ***
+  *** NEW BEST CNN (avg=10.45) ep=16 ***
+  *** NEW BEST CNN (avg=10.45) ep=21 ***
+  *** NEW BEST CNN (avg=10.45) ep=23 ***
+  *** NEW BEST CNN (avg=10.45) ep=37 ***
+  *** NEW BEST CNN (avg=10.45) ep=94 ***
+[CNN]   ep=  100  recent=10.45  best=10.45
+[CNN]   ep=  200  recent=10.45  best=10.45
+[CNN]   ep=  300  recent=10.45  best=10.45
+[CNN]   ep=  400  recent=10.45  best=10.45
+  *** NEW BEST CNN (avg=10.45) ep=450 ***
+[CNN]   ep=  500  recent=10.45  best=10.45
+  *** NEW BEST CNN (avg=10.45) ep=559 ***
+  *** NEW BEST CNN (avg=10.45) ep=576 ***
+[CNN]   ep=  600  recent=10.45  best=10.45
+[CNN]   ep=  700  recent=10.45  best=10.45
+[CNN]   ep=  800  recent=10.45  best=10.45
+[CNN]   ep=  900  recent=10.44  best=10.45
+[CNN]   ep= 1000  recent=10.45  best=10.45
+[CNN]   ep= 1100  recent=10.45  best=10.45
+[CNN]   ep= 1200  recent=10.45  best=10.45
+  *** NEW BEST CNN (avg=10.45) ep=1220 ***
+[CNN]   ep= 1300  recent=10.45  best=10.45
+  *** NEW BEST CNN (avg=10.45) ep=1325 ***
+[CNN]   ep= 1400  recent=10.45  best=10.45
+[CNN]   ep= 1500  recent=10.45  best=10.45
+[CNN]   ep= 1600  recent=10.44  best=10.45
+[CNN]   ep= 1700  recent=10.45  best=10.45
+[CNN]   ep= 1800  recent=10.45  best=10.45
+[CNN]   ep= 1900  recent=10.45  best=10.45
+[CNN]   ep= 2000  recent=10.45  best=10.45
+[CNN]   ep= 2100  recent=10.45  best=10.45
+[CNN]   ep= 2200  recent=10.45  best=10.45
+[CNN]   ep= 2300  recent=10.45  best=10.45
+[CNN]   ep= 2400  recent=10.45  best=10.45
+
+[train_single] Training done in 1143.7 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.45±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p5_cnn.pth

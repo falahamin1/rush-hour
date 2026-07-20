@@ -1,0 +1,48 @@
+[task 60] difficulty=15  puzzle_idx=11  method=cnn  episodes=2500
+[train_single] difficulty=15  puzzle_idx=11  method=cnn  episodes=2500
+[train_single] board=oHoBBooHCCKooAAJKoooIJDDxoIFFLooGGoL
+[CNN] device=cpu  board=oHoBBooHCCKooAAJKoooIJDDxoIFFLooGGoL
+[CNN]   ep=    0  recent=-0.44  best=-inf
+  *** NEW BEST CNN (avg=4.30) ep=1 ***
+  *** NEW BEST CNN (avg=9.66) ep=2 ***
+  *** NEW BEST CNN (avg=10.11) ep=3 ***
+  *** NEW BEST CNN (avg=10.25) ep=4 ***
+  *** NEW BEST CNN (avg=10.29) ep=5 ***
+  *** NEW BEST CNN (avg=10.31) ep=6 ***
+  *** NEW BEST CNN (avg=10.33) ep=7 ***
+  *** NEW BEST CNN (avg=10.34) ep=8 ***
+  *** NEW BEST CNN (avg=10.35) ep=9 ***
+  *** NEW BEST CNN (avg=10.35) ep=10 ***
+  *** NEW BEST CNN (avg=10.35) ep=11 ***
+  *** NEW BEST CNN (avg=10.35) ep=14 ***
+  *** NEW BEST CNN (avg=10.35) ep=17 ***
+[CNN]   ep=  100  recent=10.35  best=10.35
+  *** NEW BEST CNN (avg=10.35) ep=108 ***
+  *** NEW BEST CNN (avg=10.35) ep=110 ***
+[CNN]   ep=  200  recent=10.35  best=10.35
+[CNN]   ep=  300  recent=10.34  best=10.35
+[CNN]   ep=  400  recent=10.34  best=10.35
+[CNN]   ep=  500  recent=10.35  best=10.35
+[CNN]   ep=  600  recent=10.34  best=10.35
+[CNN]   ep=  700  recent=10.34  best=10.35
+[CNN]   ep=  800  recent=10.35  best=10.35
+[CNN]   ep=  900  recent=10.35  best=10.35
+[CNN]   ep= 1000  recent=10.35  best=10.35
+[CNN]   ep= 1100  recent=10.35  best=10.35
+[CNN]   ep= 1200  recent=10.35  best=10.35
+[CNN]   ep= 1300  recent=10.35  best=10.35
+[CNN]   ep= 1400  recent=10.35  best=10.35
+[CNN]   ep= 1500  recent=10.35  best=10.35
+[CNN]   ep= 1600  recent=10.35  best=10.35
+[CNN]   ep= 1700  recent=10.35  best=10.35
+[CNN]   ep= 1800  recent=10.35  best=10.35
+[CNN]   ep= 1900  recent=10.35  best=10.35
+[CNN]   ep= 2000  recent=10.34  best=10.35
+[CNN]   ep= 2100  recent=10.34  best=10.35
+[CNN]   ep= 2200  recent=10.34  best=10.35
+[CNN]   ep= 2300  recent=10.34  best=10.35
+[CNN]   ep= 2400  recent=10.32  best=10.35
+
+[train_single] Training done in 712.2 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.35±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p11_cnn.pth

@@ -1,0 +1,46 @@
+[task 49] difficulty=15  puzzle_idx=9  method=mlp  episodes=2500
+[train_single] difficulty=15  puzzle_idx=9  method=mlp  episodes=2500
+[train_single] board=BBooKLxHooKLGHoAAMGDDJoMooIJEEFFIooo
+[MLP] device=cpu  board=BBooKLxHooKLGHoAAMGDDJoMooIJEEFFIooo
+[MLP]   ep=    0  recent=-3.15  best=-inf
+  *** NEW BEST MLP (avg=-3.15) ep=2 ***
+  *** NEW BEST MLP (avg=-3.14) ep=5 ***
+  *** NEW BEST MLP (avg=-3.14) ep=10 ***
+  *** NEW BEST MLP (avg=-3.14) ep=11 ***
+  *** NEW BEST MLP (avg=-3.13) ep=13 ***
+  *** NEW BEST MLP (avg=-3.12) ep=14 ***
+  *** NEW BEST MLP (avg=-3.11) ep=20 ***
+  *** NEW BEST MLP (avg=-3.10) ep=21 ***
+  *** NEW BEST MLP (avg=-3.09) ep=25 ***
+  *** NEW BEST MLP (avg=-3.07) ep=26 ***
+[MLP]   ep=  100  recent=-3.10  best=-3.07
+[MLP]   ep=  200  recent=-3.17  best=-3.07
+[MLP]   ep=  300  recent=-3.15  best=-3.07
+[MLP]   ep=  400  recent=-3.16  best=-3.07
+[MLP]   ep=  500  recent=-3.14  best=-3.07
+[MLP]   ep=  600  recent=-3.16  best=-3.07
+[MLP]   ep=  700  recent=-3.16  best=-3.07
+[MLP]   ep=  800  recent=-3.11  best=-3.07
+[MLP]   ep=  900  recent=-3.14  best=-3.07
+[MLP]   ep= 1000  recent=-3.16  best=-3.07
+[MLP]   ep= 1100  recent=-3.17  best=-3.07
+[MLP]   ep= 1200  recent=-3.16  best=-3.07
+[MLP]   ep= 1300  recent=-3.15  best=-3.07
+[MLP]   ep= 1400  recent=-3.15  best=-3.07
+  *** NEW BEST MLP (avg=-3.06) ep=1453 ***
+  *** NEW BEST MLP (avg=-3.05) ep=1454 ***
+  *** NEW BEST MLP (avg=-3.03) ep=1455 ***
+[MLP]   ep= 1500  recent=-3.12  best=-3.03
+[MLP]   ep= 1600  recent=-3.14  best=-3.03
+[MLP]   ep= 1700  recent=-3.15  best=-3.03
+[MLP]   ep= 1800  recent=-3.17  best=-3.03
+[MLP]   ep= 1900  recent=-3.16  best=-3.03
+[MLP]   ep= 2000  recent=-3.16  best=-3.03
+[MLP]   ep= 2100  recent=-3.14  best=-3.03
+[MLP]   ep= 2200  recent=-3.17  best=-3.03
+[MLP]   ep= 2300  recent=-3.19  best=-3.03
+[MLP]   ep= 2400  recent=-3.16  best=-3.03
+
+[train_single] Training done in 324.6 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.05±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p9_mlp.pth

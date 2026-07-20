@@ -1,0 +1,2 @@
+[task 11] difficulty=10  puzzle_idx=2  method=hrep  episodes=750
+[train_single] /projects/amfa5003/rush-hour/policies/d10_p2_hrep.pth already exists — skipping.

@@ -1,0 +1,48 @@
+[task 16] difficulty=15  puzzle_idx=3  method=hrep  episodes=2500
+[train_single] difficulty=15  puzzle_idx=3  method=hrep  episodes=2500
+[train_single] board=BBIoooGoICCCGAAoKLoHDDKLoHoJEEFFoJoo
+[H-rep] device=cpu  board=BBIoooGoICCCGAAoKLoHDDKLoHoJEEFFoJoo
+[H-rep] ep=    0  recent=-2.91  best=-inf
+  *** NEW BEST H-rep (avg=-2.91) ep=2 ***
+  *** NEW BEST H-rep (avg=-2.91) ep=6 ***
+  *** NEW BEST H-rep (avg=-2.91) ep=17 ***
+  *** NEW BEST H-rep (avg=-2.91) ep=21 ***
+  *** NEW BEST H-rep (avg=-2.91) ep=22 ***
+  *** NEW BEST H-rep (avg=-2.90) ep=25 ***
+  *** NEW BEST H-rep (avg=-2.90) ep=26 ***
+  *** NEW BEST H-rep (avg=-2.90) ep=53 ***
+  *** NEW BEST H-rep (avg=-2.90) ep=54 ***
+  *** NEW BEST H-rep (avg=-2.88) ep=68 ***
+  *** NEW BEST H-rep (avg=-2.86) ep=69 ***
+  *** NEW BEST H-rep (avg=-2.83) ep=74 ***
+  *** NEW BEST H-rep (avg=-2.83) ep=75 ***
+[H-rep] ep=  100  recent=-2.90  best=-2.83
+[H-rep] ep=  200  recent=-2.92  best=-2.83
+  *** NEW BEST H-rep (avg=-2.68) ep=225 ***
+  *** NEW BEST H-rep (avg=-2.67) ep=226 ***
+[H-rep] ep=  300  recent=-2.91  best=-2.67
+[H-rep] ep=  400  recent=-2.91  best=-2.67
+[H-rep] ep=  500  recent=-2.92  best=-2.67
+[H-rep] ep=  600  recent=-2.92  best=-2.67
+[H-rep] ep=  700  recent=-2.92  best=-2.67
+[H-rep] ep=  800  recent=-2.87  best=-2.67
+[H-rep] ep=  900  recent=-2.91  best=-2.67
+[H-rep] ep= 1000  recent=-2.90  best=-2.67
+[H-rep] ep= 1100  recent=-2.91  best=-2.67
+[H-rep] ep= 1200  recent=-2.89  best=-2.67
+[H-rep] ep= 1300  recent=-2.93  best=-2.67
+[H-rep] ep= 1400  recent=-2.93  best=-2.67
+[H-rep] ep= 1500  recent=-2.95  best=-2.67
+[H-rep] ep= 1600  recent=-2.94  best=-2.67
+[H-rep] ep= 1700  recent=-2.91  best=-2.67
+[H-rep] ep= 1800  recent=-2.92  best=-2.67
+[H-rep] ep= 1900  recent=-2.88  best=-2.67
+[H-rep] ep= 2000  recent=-2.90  best=-2.67
+[H-rep] ep= 2100  recent=-2.90  best=-2.67
+[H-rep] ep= 2200  recent=-2.92  best=-2.67
+[H-rep] ep= 2300  recent=-2.94  best=-2.67
+[H-rep] ep= 2400  recent=-2.93  best=-2.67
+
+[train_single] Training done in 532.0 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.90±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p3_hrep.pth

@@ -1,0 +1,2 @@
+[task 7] difficulty=15  puzzle_idx=1  method=vrep  episodes=2500
+[train_single] /projects/amfa5003/rush-hour/policies/d15_p1_vrep.pth already exists — skipping.

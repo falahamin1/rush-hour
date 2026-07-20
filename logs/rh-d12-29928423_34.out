@@ -1,0 +1,47 @@
+[task 34] difficulty=12  puzzle_idx=6  method=mlp  episodes=1200
+[train_single] difficulty=12  puzzle_idx=6  method=mlp  episodes=1200
+[train_single] board=BBooxooooJDDAAoJKLHoEEKLHoIFFoGGIooo
+[MLP] device=cpu  board=BBooxooooJDDAAoJKLHoEEKLHoIFFoGGIooo
+[MLP]   ep=    0  recent=-2.66  best=-inf
+  *** NEW BEST MLP (avg=-0.01) ep=2 ***
+  *** NEW BEST MLP (avg=3.86) ep=3 ***
+  *** NEW BEST MLP (avg=9.35) ep=4 ***
+  *** NEW BEST MLP (avg=9.85) ep=6 ***
+  *** NEW BEST MLP (avg=10.04) ep=7 ***
+  *** NEW BEST MLP (avg=10.22) ep=8 ***
+  *** NEW BEST MLP (avg=10.31) ep=9 ***
+  *** NEW BEST MLP (avg=10.35) ep=10 ***
+  *** NEW BEST MLP (avg=10.38) ep=11 ***
+  *** NEW BEST MLP (avg=10.41) ep=12 ***
+  *** NEW BEST MLP (avg=10.42) ep=13 ***
+  *** NEW BEST MLP (avg=10.43) ep=14 ***
+  *** NEW BEST MLP (avg=10.45) ep=15 ***
+  *** NEW BEST MLP (avg=10.46) ep=16 ***
+  *** NEW BEST MLP (avg=10.46) ep=18 ***
+  *** NEW BEST MLP (avg=10.47) ep=22 ***
+  *** NEW BEST MLP (avg=10.47) ep=23 ***
+  *** NEW BEST MLP (avg=10.47) ep=24 ***
+  *** NEW BEST MLP (avg=10.47) ep=35 ***
+  *** NEW BEST MLP (avg=10.48) ep=36 ***
+  *** NEW BEST MLP (avg=10.48) ep=38 ***
+  *** NEW BEST MLP (avg=10.48) ep=39 ***
+  *** NEW BEST MLP (avg=10.48) ep=41 ***
+  *** NEW BEST MLP (avg=10.48) ep=45 ***
+  *** NEW BEST MLP (avg=10.48) ep=48 ***
+  *** NEW BEST MLP (avg=10.48) ep=49 ***
+[MLP]   ep=  100  recent=10.47  best=10.48
+[MLP]   ep=  200  recent=10.47  best=10.48
+[MLP]   ep=  300  recent=10.48  best=10.48
+[MLP]   ep=  400  recent=10.47  best=10.48
+  *** NEW BEST MLP (avg=10.48) ep=498 ***
+[MLP]   ep=  500  recent=10.48  best=10.48
+[MLP]   ep=  600  recent=10.48  best=10.48
+[MLP]   ep=  700  recent=10.48  best=10.48
+[MLP]   ep=  800  recent=10.47  best=10.48
+[MLP]   ep=  900  recent=10.48  best=10.48
+[MLP]   ep= 1000  recent=10.44  best=10.48
+[MLP]   ep= 1100  recent=10.48  best=10.48
+
+[train_single] Training done in 299.5 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.48±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p6_mlp.pth

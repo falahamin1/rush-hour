@@ -1,0 +1,36 @@
+[task 27] difficulty=12  puzzle_idx=5  method=vrep  episodes=1200
+[train_single] difficulty=12  puzzle_idx=5  method=vrep  episodes=1200
+[train_single] board=ooBBooCCooJKGAAoJKGDDIJoooHIEEFFHooo
+[V-rep] device=cpu  board=ooBBooCCooJKGAAoJKGDDIJoooHIEEFFHooo
+[V-rep] ep=    0  recent=-2.94  best=-inf
+  *** NEW BEST V-rep (avg=-2.95) ep=2 ***
+  *** NEW BEST V-rep (avg=-2.95) ep=11 ***
+  *** NEW BEST V-rep (avg=-2.95) ep=12 ***
+  *** NEW BEST V-rep (avg=-2.93) ep=23 ***
+[V-rep] ep=  100  recent=-2.97  best=-2.93
+[V-rep] ep=  200  recent=-2.90  best=-2.93
+  *** NEW BEST V-rep (avg=-2.93) ep=201 ***
+  *** NEW BEST V-rep (avg=-2.93) ep=204 ***
+  *** NEW BEST V-rep (avg=-2.92) ep=205 ***
+[V-rep] ep=  300  recent=-2.94  best=-2.92
+[V-rep] ep=  400  recent=-2.94  best=-2.92
+  *** NEW BEST V-rep (avg=-2.92) ep=424 ***
+[V-rep] ep=  500  recent=-2.97  best=-2.92
+[V-rep] ep=  600  recent=-2.98  best=-2.92
+  *** NEW BEST V-rep (avg=-2.91) ep=677 ***
+  *** NEW BEST V-rep (avg=-2.91) ep=678 ***
+[V-rep] ep=  700  recent=-2.90  best=-2.91
+  *** NEW BEST V-rep (avg=-2.91) ep=722 ***
+  *** NEW BEST V-rep (avg=-2.90) ep=739 ***
+  *** NEW BEST V-rep (avg=-2.88) ep=776 ***
+[V-rep] ep=  800  recent=-2.91  best=-2.88
+  *** NEW BEST V-rep (avg=-2.88) ep=895 ***
+  *** NEW BEST V-rep (avg=-2.88) ep=896 ***
+[V-rep] ep=  900  recent=-2.88  best=-2.88
+  *** NEW BEST V-rep (avg=-2.87) ep=952 ***
+[V-rep] ep= 1000  recent=-2.88  best=-2.87
+[V-rep] ep= 1100  recent=-2.89  best=-2.87
+
+[train_single] Training done in 202.1 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.02±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p5_vrep.pth

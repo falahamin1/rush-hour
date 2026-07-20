@@ -1,0 +1,69 @@
+[task 39] difficulty=15  puzzle_idx=7  method=mlp  episodes=2500
+[train_single] difficulty=15  puzzle_idx=7  method=mlp  episodes=2500
+[train_single] board=GBBJooGCCJoLAAIooLoHIDDooHEEKoooooKx
+[MLP] device=cpu  board=GBBJooGCCJoLAAIooLoHIDDooHEEKoooooKx
+[MLP]   ep=    0  recent=-2.76  best=-inf
+  *** NEW BEST MLP (avg=-2.77) ep=2 ***
+  *** NEW BEST MLP (avg=-2.76) ep=5 ***
+  *** NEW BEST MLP (avg=-2.76) ep=6 ***
+  *** NEW BEST MLP (avg=-2.55) ep=7 ***
+  *** NEW BEST MLP (avg=-2.54) ep=8 ***
+  *** NEW BEST MLP (avg=-2.50) ep=10 ***
+  *** NEW BEST MLP (avg=-2.28) ep=11 ***
+  *** NEW BEST MLP (avg=-2.27) ep=47 ***
+  *** NEW BEST MLP (avg=2.13) ep=48 ***
+  *** NEW BEST MLP (avg=5.70) ep=49 ***
+  *** NEW BEST MLP (avg=9.03) ep=50 ***
+  *** NEW BEST MLP (avg=9.22) ep=51 ***
+  *** NEW BEST MLP (avg=10.12) ep=52 ***
+  *** NEW BEST MLP (avg=10.22) ep=53 ***
+  *** NEW BEST MLP (avg=10.24) ep=54 ***
+  *** NEW BEST MLP (avg=10.27) ep=55 ***
+  *** NEW BEST MLP (avg=10.29) ep=56 ***
+  *** NEW BEST MLP (avg=10.30) ep=57 ***
+  *** NEW BEST MLP (avg=10.30) ep=58 ***
+  *** NEW BEST MLP (avg=10.30) ep=59 ***
+  *** NEW BEST MLP (avg=10.31) ep=60 ***
+  *** NEW BEST MLP (avg=10.32) ep=63 ***
+  *** NEW BEST MLP (avg=10.32) ep=64 ***
+  *** NEW BEST MLP (avg=10.32) ep=65 ***
+  *** NEW BEST MLP (avg=10.32) ep=71 ***
+  *** NEW BEST MLP (avg=10.32) ep=83 ***
+  *** NEW BEST MLP (avg=10.32) ep=89 ***
+[MLP]   ep=  100  recent=10.32  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=109 ***
+[MLP]   ep=  200  recent=10.32  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=267 ***
+[MLP]   ep=  300  recent=-2.86  best=10.32
+[MLP]   ep=  400  recent=10.31  best=10.32
+[MLP]   ep=  500  recent=10.32  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=575 ***
+[MLP]   ep=  600  recent=10.31  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=617 ***
+[MLP]   ep=  700  recent=10.27  best=10.32
+[MLP]   ep=  800  recent=10.31  best=10.32
+[MLP]   ep=  900  recent=10.29  best=10.32
+[MLP]   ep= 1000  recent=10.30  best=10.32
+[MLP]   ep= 1100  recent=10.32  best=10.32
+[MLP]   ep= 1200  recent=10.32  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=1201 ***
+  *** NEW BEST MLP (avg=10.32) ep=1203 ***
+  *** NEW BEST MLP (avg=10.32) ep=1220 ***
+  *** NEW BEST MLP (avg=10.32) ep=1295 ***
+[MLP]   ep= 1300  recent=10.32  best=10.32
+  *** NEW BEST MLP (avg=10.32) ep=1301 ***
+[MLP]   ep= 1400  recent=-2.86  best=10.32
+[MLP]   ep= 1500  recent=-2.84  best=10.32
+[MLP]   ep= 1600  recent=-2.82  best=10.32
+[MLP]   ep= 1700  recent=-2.82  best=10.32
+[MLP]   ep= 1800  recent=-2.89  best=10.32
+[MLP]   ep= 1900  recent=-2.87  best=10.32
+[MLP]   ep= 2000  recent=-2.87  best=10.32
+[MLP]   ep= 2100  recent=-2.85  best=10.32
+[MLP]   ep= 2200  recent=-2.81  best=10.32
+[MLP]   ep= 2300  recent=-2.76  best=10.32
+[MLP]   ep= 2400  recent=-2.87  best=10.32
+
+[train_single] Training done in 496.4 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.32±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p7_mlp.pth

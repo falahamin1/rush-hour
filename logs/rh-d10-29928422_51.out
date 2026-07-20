@@ -1,0 +1,18 @@
+[task 51] difficulty=10  puzzle_idx=10  method=hrep  episodes=750
+[train_single] difficulty=10  puzzle_idx=10  method=hrep  episodes=750
+[train_single] board=oBBBoLoCCooLAAIJooHoIJDDHoEEKoFFGGKo
+[H-rep] device=cpu  board=oBBBoLoCCooLAAIJooHoIJDDHoEEKoFFGGKo
+[H-rep] ep=    0  recent=-2.71  best=-inf
+  *** NEW BEST H-rep (avg=-2.54) ep=2 ***
+  *** NEW BEST H-rep (avg=-2.53) ep=3 ***
+[H-rep] ep=  100  recent=-2.82  best=-2.53
+[H-rep] ep=  200  recent=-2.82  best=-2.53
+[H-rep] ep=  300  recent=-2.83  best=-2.53
+[H-rep] ep=  400  recent=-2.83  best=-2.53
+[H-rep] ep=  500  recent=-2.83  best=-2.53
+[H-rep] ep=  600  recent=-2.81  best=-2.53
+[H-rep] ep=  700  recent=-2.81  best=-2.53
+
+[train_single] Training done in 133.4 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.77±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d10_p10_hrep.pth

@@ -1,0 +1,47 @@
+[task 35] difficulty=12  puzzle_idx=6  method=cnn  episodes=1200
+[train_single] difficulty=12  puzzle_idx=6  method=cnn  episodes=1200
+[train_single] board=BBooxooooJDDAAoJKLHoEEKLHoIFFoGGIooo
+[CNN] device=cpu  board=BBooxooooJDDAAoJKLHoEEKLHoIFFoGGIooo
+[CNN]   ep=    0  recent=-0.40  best=-inf
+  *** NEW BEST CNN (avg=4.62) ep=2 ***
+  *** NEW BEST CNN (avg=9.47) ep=3 ***
+  *** NEW BEST CNN (avg=9.95) ep=4 ***
+  *** NEW BEST CNN (avg=10.18) ep=5 ***
+  *** NEW BEST CNN (avg=10.26) ep=6 ***
+  *** NEW BEST CNN (avg=10.32) ep=7 ***
+  *** NEW BEST CNN (avg=10.34) ep=8 ***
+  *** NEW BEST CNN (avg=10.41) ep=9 ***
+  *** NEW BEST CNN (avg=10.44) ep=11 ***
+  *** NEW BEST CNN (avg=10.46) ep=12 ***
+  *** NEW BEST CNN (avg=10.46) ep=14 ***
+  *** NEW BEST CNN (avg=10.47) ep=15 ***
+  *** NEW BEST CNN (avg=10.47) ep=16 ***
+  *** NEW BEST CNN (avg=10.47) ep=17 ***
+  *** NEW BEST CNN (avg=10.48) ep=18 ***
+  *** NEW BEST CNN (avg=10.48) ep=19 ***
+  *** NEW BEST CNN (avg=10.48) ep=66 ***
+[CNN]   ep=  100  recent=10.47  best=10.48
+  *** NEW BEST CNN (avg=10.48) ep=104 ***
+  *** NEW BEST CNN (avg=10.48) ep=110 ***
+  *** NEW BEST CNN (avg=10.48) ep=119 ***
+  *** NEW BEST CNN (avg=10.48) ep=128 ***
+  *** NEW BEST CNN (avg=10.48) ep=188 ***
+[CNN]   ep=  200  recent=10.48  best=10.48
+  *** NEW BEST CNN (avg=10.48) ep=203 ***
+  *** NEW BEST CNN (avg=10.48) ep=204 ***
+[CNN]   ep=  300  recent=10.48  best=10.48
+[CNN]   ep=  400  recent=10.48  best=10.48
+  *** NEW BEST CNN (avg=10.48) ep=430 ***
+  *** NEW BEST CNN (avg=10.48) ep=434 ***
+[CNN]   ep=  500  recent=10.48  best=10.48
+[CNN]   ep=  600  recent=10.47  best=10.48
+[CNN]   ep=  700  recent=10.47  best=10.48
+  *** NEW BEST CNN (avg=10.48) ep=794 ***
+[CNN]   ep=  800  recent=10.48  best=10.48
+[CNN]   ep=  900  recent=10.48  best=10.48
+[CNN]   ep= 1000  recent=10.48  best=10.48
+[CNN]   ep= 1100  recent=10.48  best=10.48
+
+[train_single] Training done in 336.3 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.48±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p6_cnn.pth

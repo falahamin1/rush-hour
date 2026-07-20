@@ -1,0 +1,71 @@
+[task 46] difficulty=12  puzzle_idx=9  method=hrep  episodes=1200
+[train_single] difficulty=12  puzzle_idx=9  method=hrep  episodes=1200
+[train_single] board=HoBBooHoCCKLooAAKLooIDDLooIJEEoFFJGG
+[H-rep] device=cpu  board=HoBBooHoCCKLooAAKLooIDDLooIJEEoFFJGG
+[H-rep] ep=    0  recent=-0.83  best=-inf
+  *** NEW BEST H-rep (avg=-2.53) ep=2 ***
+[H-rep] ep=  100  recent=-3.04  best=-2.53
+[H-rep] ep=  200  recent=-3.02  best=-2.53
+  *** NEW BEST H-rep (avg=-2.39) ep=209 ***
+  *** NEW BEST H-rep (avg=-1.75) ep=210 ***
+  *** NEW BEST H-rep (avg=-1.06) ep=211 ***
+  *** NEW BEST H-rep (avg=1.07) ep=212 ***
+  *** NEW BEST H-rep (avg=3.37) ep=213 ***
+  *** NEW BEST H-rep (avg=3.94) ep=214 ***
+  *** NEW BEST H-rep (avg=6.38) ep=215 ***
+  *** NEW BEST H-rep (avg=7.22) ep=216 ***
+  *** NEW BEST H-rep (avg=8.01) ep=217 ***
+  *** NEW BEST H-rep (avg=8.12) ep=220 ***
+  *** NEW BEST H-rep (avg=9.19) ep=222 ***
+  *** NEW BEST H-rep (avg=9.49) ep=226 ***
+  *** NEW BEST H-rep (avg=9.53) ep=229 ***
+  *** NEW BEST H-rep (avg=9.86) ep=231 ***
+  *** NEW BEST H-rep (avg=9.89) ep=233 ***
+  *** NEW BEST H-rep (avg=9.92) ep=234 ***
+  *** NEW BEST H-rep (avg=9.97) ep=235 ***
+  *** NEW BEST H-rep (avg=9.99) ep=237 ***
+  *** NEW BEST H-rep (avg=10.02) ep=238 ***
+  *** NEW BEST H-rep (avg=10.04) ep=242 ***
+  *** NEW BEST H-rep (avg=10.09) ep=243 ***
+  *** NEW BEST H-rep (avg=10.13) ep=244 ***
+  *** NEW BEST H-rep (avg=10.14) ep=245 ***
+  *** NEW BEST H-rep (avg=10.15) ep=246 ***
+  *** NEW BEST H-rep (avg=10.15) ep=249 ***
+  *** NEW BEST H-rep (avg=10.17) ep=250 ***
+  *** NEW BEST H-rep (avg=10.17) ep=253 ***
+  *** NEW BEST H-rep (avg=10.20) ep=254 ***
+  *** NEW BEST H-rep (avg=10.21) ep=257 ***
+  *** NEW BEST H-rep (avg=10.22) ep=259 ***
+  *** NEW BEST H-rep (avg=10.22) ep=265 ***
+  *** NEW BEST H-rep (avg=10.22) ep=267 ***
+  *** NEW BEST H-rep (avg=10.22) ep=278 ***
+  *** NEW BEST H-rep (avg=10.23) ep=283 ***
+  *** NEW BEST H-rep (avg=10.23) ep=295 ***
+[H-rep] ep=  300  recent=10.22  best=10.23
+  *** NEW BEST H-rep (avg=10.23) ep=301 ***
+  *** NEW BEST H-rep (avg=10.23) ep=320 ***
+  *** NEW BEST H-rep (avg=10.23) ep=324 ***
+  *** NEW BEST H-rep (avg=10.23) ep=353 ***
+  *** NEW BEST H-rep (avg=10.23) ep=354 ***
+  *** NEW BEST H-rep (avg=10.23) ep=355 ***
+  *** NEW BEST H-rep (avg=10.23) ep=363 ***
+  *** NEW BEST H-rep (avg=10.23) ep=365 ***
+  *** NEW BEST H-rep (avg=10.23) ep=385 ***
+  *** NEW BEST H-rep (avg=10.23) ep=394 ***
+  *** NEW BEST H-rep (avg=10.23) ep=399 ***
+[H-rep] ep=  400  recent=10.23  best=10.23
+  *** NEW BEST H-rep (avg=10.23) ep=474 ***
+[H-rep] ep=  500  recent=10.22  best=10.23
+  *** NEW BEST H-rep (avg=10.23) ep=568 ***
+  *** NEW BEST H-rep (avg=10.23) ep=580 ***
+  *** NEW BEST H-rep (avg=10.24) ep=582 ***
+[H-rep] ep=  600  recent=10.23  best=10.24
+[H-rep] ep=  700  recent=10.23  best=10.24
+[H-rep] ep=  800  recent=10.22  best=10.24
+[H-rep] ep=  900  recent=10.23  best=10.24
+[H-rep] ep= 1000  recent=10.20  best=10.24
+[H-rep] ep= 1100  recent=8.53  best=10.24
+
+[train_single] Training done in 306.3 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.24±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p9_hrep.pth

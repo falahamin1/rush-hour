@@ -1,0 +1,50 @@
+[task 53] difficulty=15  puzzle_idx=10  method=gnn  episodes=2500
+[train_single] difficulty=15  puzzle_idx=10  method=gnn  episodes=2500
+[train_single] board=xCCoKLoHooKLGHoAAMGDDooMooIJEEFFIJoo
+[GNN] device=cpu  board=xCCoKLoHooKLGHoAAMGDDooMooIJEEFFIJoo
+[GNN]   ep=    0  recent=-3.14  best=-inf
+  *** NEW BEST GNN (avg=-3.16) ep=2 ***
+  *** NEW BEST GNN (avg=-3.15) ep=3 ***
+  *** NEW BEST GNN (avg=-3.15) ep=4 ***
+  *** NEW BEST GNN (avg=-3.14) ep=7 ***
+  *** NEW BEST GNN (avg=-3.14) ep=8 ***
+  *** NEW BEST GNN (avg=-3.12) ep=21 ***
+  *** NEW BEST GNN (avg=-3.10) ep=22 ***
+[GNN]   ep=  100  recent=-3.18  best=-3.10
+[GNN]   ep=  200  recent=-3.15  best=-3.10
+  *** NEW BEST GNN (avg=-2.97) ep=224 ***
+  *** NEW BEST GNN (avg=-2.96) ep=225 ***
+[GNN]   ep=  300  recent=-3.19  best=-2.96
+  *** NEW BEST GNN (avg=-2.94) ep=342 ***
+  *** NEW BEST GNN (avg=-2.92) ep=343 ***
+  *** NEW BEST GNN (avg=-2.92) ep=344 ***
+[GNN]   ep=  400  recent=-3.14  best=-2.92
+  *** NEW BEST GNN (avg=-2.90) ep=470 ***
+[GNN]   ep=  500  recent=-3.20  best=-2.90
+[GNN]   ep=  600  recent=-3.15  best=-2.90
+[GNN]   ep=  700  recent=-3.15  best=-2.90
+  *** NEW BEST GNN (avg=-2.89) ep=749 ***
+  *** NEW BEST GNN (avg=-2.88) ep=753 ***
+  *** NEW BEST GNN (avg=-2.87) ep=754 ***
+[GNN]   ep=  800  recent=-3.13  best=-2.87
+[GNN]   ep=  900  recent=-3.18  best=-2.87
+  *** NEW BEST GNN (avg=-2.48) ep=961 ***
+[GNN]   ep= 1000  recent=-3.17  best=-2.48
+[GNN]   ep= 1100  recent=-3.15  best=-2.48
+[GNN]   ep= 1200  recent=-3.16  best=-2.48
+[GNN]   ep= 1300  recent=-3.17  best=-2.48
+[GNN]   ep= 1400  recent=-3.16  best=-2.48
+[GNN]   ep= 1500  recent=-3.12  best=-2.48
+[GNN]   ep= 1600  recent=-3.15  best=-2.48
+[GNN]   ep= 1700  recent=-3.17  best=-2.48
+[GNN]   ep= 1800  recent=-3.15  best=-2.48
+[GNN]   ep= 1900  recent=-3.19  best=-2.48
+[GNN]   ep= 2000  recent=-3.18  best=-2.48
+[GNN]   ep= 2100  recent=-3.18  best=-2.48
+[GNN]   ep= 2200  recent=-3.17  best=-2.48
+[GNN]   ep= 2300  recent=-3.16  best=-2.48
+[GNN]   ep= 2400  recent=-3.19  best=-2.48
+
+[train_single] Training done in 511.2 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-3.17±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p10_gnn.pth

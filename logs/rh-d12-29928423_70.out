@@ -1,0 +1,46 @@
+[task 70] difficulty=12  puzzle_idx=13  method=cnn  episodes=1200
+[train_single] difficulty=12  puzzle_idx=13  method=cnn  episodes=1200
+[train_single] board=xHCCKLGHDDKLGAAJoLooIJooooIEEoooooFF
+[CNN] device=cpu  board=xHCCKLGHDDKLGAAJoLooIJooooIEEoooooFF
+[CNN]   ep=    0  recent=-2.85  best=-inf
+  *** NEW BEST CNN (avg=-2.41) ep=2 ***
+  *** NEW BEST CNN (avg=-0.49) ep=3 ***
+  *** NEW BEST CNN (avg=5.19) ep=4 ***
+  *** NEW BEST CNN (avg=9.83) ep=5 ***
+  *** NEW BEST CNN (avg=10.06) ep=6 ***
+  *** NEW BEST CNN (avg=10.10) ep=7 ***
+  *** NEW BEST CNN (avg=10.15) ep=8 ***
+  *** NEW BEST CNN (avg=10.18) ep=9 ***
+  *** NEW BEST CNN (avg=10.19) ep=10 ***
+  *** NEW BEST CNN (avg=10.21) ep=11 ***
+  *** NEW BEST CNN (avg=10.22) ep=12 ***
+  *** NEW BEST CNN (avg=10.23) ep=13 ***
+  *** NEW BEST CNN (avg=10.25) ep=14 ***
+  *** NEW BEST CNN (avg=10.26) ep=15 ***
+  *** NEW BEST CNN (avg=10.26) ep=17 ***
+  *** NEW BEST CNN (avg=10.29) ep=18 ***
+  *** NEW BEST CNN (avg=10.29) ep=19 ***
+  *** NEW BEST CNN (avg=10.30) ep=20 ***
+  *** NEW BEST CNN (avg=10.30) ep=22 ***
+  *** NEW BEST CNN (avg=10.31) ep=26 ***
+  *** NEW BEST CNN (avg=10.31) ep=47 ***
+[CNN]   ep=  100  recent=10.30  best=10.31
+  *** NEW BEST CNN (avg=10.31) ep=144 ***
+  *** NEW BEST CNN (avg=10.31) ep=196 ***
+[CNN]   ep=  200  recent=10.28  best=10.31
+[CNN]   ep=  300  recent=10.29  best=10.31
+[CNN]   ep=  400  recent=10.30  best=10.31
+[CNN]   ep=  500  recent=10.01  best=10.31
+  *** NEW BEST CNN (avg=10.31) ep=555 ***
+  *** NEW BEST CNN (avg=10.31) ep=599 ***
+[CNN]   ep=  600  recent=10.30  best=10.31
+[CNN]   ep=  700  recent=10.29  best=10.31
+[CNN]   ep=  800  recent=10.31  best=10.31
+[CNN]   ep=  900  recent=10.31  best=10.31
+  *** NEW BEST CNN (avg=10.31) ep=991 ***
+[CNN]   ep= 1000  recent=10.31  best=10.31
+[CNN]   ep= 1100  recent=10.31  best=10.31
+
+[train_single] Training done in 323.9 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.31±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d12_p13_cnn.pth

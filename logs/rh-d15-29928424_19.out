@@ -1,0 +1,47 @@
+[task 19] difficulty=15  puzzle_idx=3  method=mlp  episodes=2500
+[train_single] difficulty=15  puzzle_idx=3  method=mlp  episodes=2500
+[train_single] board=BBIoooGoICCCGAAoKLoHDDKLoHoJEEFFoJoo
+[MLP] device=cpu  board=BBIoooGoICCCGAAoKLoHDDKLoHoJEEFFoJoo
+[MLP]   ep=    0  recent=-2.92  best=-inf
+  *** NEW BEST MLP (avg=-2.91) ep=2 ***
+  *** NEW BEST MLP (avg=-2.91) ep=28 ***
+  *** NEW BEST MLP (avg=-2.90) ep=40 ***
+  *** NEW BEST MLP (avg=-2.89) ep=41 ***
+  *** NEW BEST MLP (avg=-2.88) ep=43 ***
+  *** NEW BEST MLP (avg=-2.88) ep=44 ***
+[MLP]   ep=  100  recent=-2.92  best=-2.88
+  *** NEW BEST MLP (avg=-2.87) ep=136 ***
+  *** NEW BEST MLP (avg=-2.86) ep=137 ***
+  *** NEW BEST MLP (avg=-2.85) ep=138 ***
+[MLP]   ep=  200  recent=-2.91  best=-2.85
+  *** NEW BEST MLP (avg=-2.85) ep=238 ***
+[MLP]   ep=  300  recent=-2.91  best=-2.85
+  *** NEW BEST MLP (avg=-2.84) ep=320 ***
+[MLP]   ep=  400  recent=-2.92  best=-2.84
+[MLP]   ep=  500  recent=-2.92  best=-2.84
+[MLP]   ep=  600  recent=-2.92  best=-2.84
+[MLP]   ep=  700  recent=-2.91  best=-2.84
+  *** NEW BEST MLP (avg=-2.84) ep=795 ***
+[MLP]   ep=  800  recent=-2.90  best=-2.84
+  *** NEW BEST MLP (avg=-2.83) ep=824 ***
+[MLP]   ep=  900  recent=-2.91  best=-2.83
+[MLP]   ep= 1000  recent=-2.91  best=-2.83
+[MLP]   ep= 1100  recent=-2.91  best=-2.83
+  *** NEW BEST MLP (avg=-2.81) ep=1152 ***
+[MLP]   ep= 1200  recent=-2.89  best=-2.81
+[MLP]   ep= 1300  recent=-2.92  best=-2.81
+[MLP]   ep= 1400  recent=-2.92  best=-2.81
+[MLP]   ep= 1500  recent=-2.92  best=-2.81
+[MLP]   ep= 1600  recent=-2.91  best=-2.81
+[MLP]   ep= 1700  recent=-2.91  best=-2.81
+[MLP]   ep= 1800  recent=-2.92  best=-2.81
+[MLP]   ep= 1900  recent=-2.92  best=-2.81
+[MLP]   ep= 2000  recent=-2.91  best=-2.81
+[MLP]   ep= 2100  recent=-2.92  best=-2.81
+[MLP]   ep= 2200  recent=-2.91  best=-2.81
+[MLP]   ep= 2300  recent=-2.91  best=-2.81
+[MLP]   ep= 2400  recent=-2.92  best=-2.81
+
+[train_single] Training done in 494.2 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-2.90±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p3_mlp.pth
