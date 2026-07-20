@@ -1,8 +1,8 @@
 """
 Generate presentation figures for Rush Hour HPC results.
 
-Loads all 27 saved policies, averages across the 3 puzzles per difficulty,
-and produces two figures matching the tangram-figure style:
+Loads all saved policies, averages across however many puzzles were trained
+per difficulty, and produces two figures matching the tangram-figure style:
 
   results/rh_solve_rate_figure.pdf   — solve-rate bar chart (3 difficulty panels)
   results/rh_reward_figure.pdf       — mean-reward bar chart (3 difficulty panels)
@@ -74,7 +74,17 @@ def summary(data):
 
 # ── Shared panel builder ──────────────────────────────────────────────────────
 
-def _bar_panel(ax, D, means, stds, ylabel, ylim, fmt_pct=False):
+def _n_label(D, data):
+    """'n=15' if every method has the same puzzle count at this difficulty,
+    else 'n=13-15' to flag that the sample sizes differ (e.g. a combo that
+    hasn't finished training yet)."""
+    counts = sorted(set(len(data[D][M]) for M in METHODS))
+    if len(counts) == 1:
+        return f'n={counts[0]}'
+    return f'n={counts[0]}-{counts[-1]}'
+
+
+def _bar_panel(ax, D, means, stds, ylabel, ylim, data, fmt_pct=False):
     x     = np.arange(len(METHODS))
     width = 0.55
 
@@ -104,22 +114,23 @@ def _bar_panel(ax, D, means, stds, ylabel, ylim, fmt_pct=False):
     ax.set_xticklabels(LABELS, fontsize=11)
     ax.set_ylim(*ylim)
     ax.set_ylabel(ylabel, fontsize=11)
-    ax.set_title(f'Difficulty  {D}  moves', fontsize=12, fontweight='bold', pad=8)
+    ax.set_title(f'Difficulty  {D}  moves  ({_n_label(D, data)})',
+                 fontsize=12, fontweight='bold', pad=16)
 
 
 # ── Figure 1: Solve rate ──────────────────────────────────────────────────────
 
-def plot_solve_rates(solve_mean, solve_std, out_dir):
+def plot_solve_rates(solve_mean, solve_std, data, out_dir):
     fig, axes = plt.subplots(1, 3, figsize=(13, 4.2), sharey=True)
     fig.suptitle(
-        'Rush Hour — Solve Rate by Representation  (avg. over 3 puzzles ± std)',
+        'Rush Hour — Solve Rate by Representation  (mean ± std across puzzles)',
         fontsize=13, fontweight='bold', y=1.02,
     )
 
     for ax, D in zip(axes, DIFFICULTIES):
-        _bar_panel(ax, D, solve_mean, solve_std,
+        _bar_panel(ax, D, solve_mean, solve_std, data=data,
                    ylabel='Solve rate (%)' if D == 10 else '',
-                   ylim=(-5, 120), fmt_pct=True)
+                   ylim=(-5, 130), fmt_pct=True)
         if D != 10:
             ax.set_ylabel('')
 
@@ -138,15 +149,15 @@ def plot_solve_rates(solve_mean, solve_std, out_dir):
 
 # ── Figure 2: Mean reward ─────────────────────────────────────────────────────
 
-def plot_rewards(reward_mean, reward_std, out_dir):
+def plot_rewards(reward_mean, reward_std, data, out_dir):
     fig, axes = plt.subplots(1, 3, figsize=(13, 4.2), sharey=True)
     fig.suptitle(
-        'Rush Hour — Mean Eval Reward by Representation  (avg. over 3 puzzles ± std)',
+        'Rush Hour — Mean Eval Reward by Representation  (mean ± std across puzzles)',
         fontsize=13, fontweight='bold', y=1.02,
     )
 
     for ax, D in zip(axes, DIFFICULTIES):
-        _bar_panel(ax, D, reward_mean, reward_std,
+        _bar_panel(ax, D, reward_mean, reward_std, data=data,
                    ylabel='Mean eval reward' if D == 10 else '',
                    ylim=(-6, 14), fmt_pct=False)
         ax.axhline(0, color='black', linewidth=0.8, linestyle='--', zorder=2)
@@ -189,8 +200,8 @@ def main():
 
     os.makedirs(RESULTS_DIR, exist_ok=True)
     print('Generating figures ...')
-    plot_solve_rates(solve_mean, solve_std, RESULTS_DIR)
-    plot_rewards(reward_mean, reward_std, RESULTS_DIR)
+    plot_solve_rates(solve_mean, solve_std, data, RESULTS_DIR)
+    plot_rewards(reward_mean, reward_std, data, RESULTS_DIR)
     print('Done.')
 
 
