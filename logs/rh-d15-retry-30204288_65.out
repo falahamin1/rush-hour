@@ -1,0 +1,15 @@
+[task 65] difficulty=15  puzzle_idx=12  method=cnn  episodes=2500
+[train_single] difficulty=15  puzzle_idx=12  method=cnn  episodes=2500
+[train_single] board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[CNN] device=cpu  board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[CNN] Resumed from checkpoint at ep=1851  best=10.36
+[CNN]   ep= 1900  recent=10.36  best=10.36
+[CNN]   ep= 2000  recent=10.36  best=10.36
+[CNN]   ep= 2100  recent=10.36  best=10.36
+[CNN]   ep= 2200  recent=10.36  best=10.36
+[CNN]   ep= 2300  recent=-3.20  best=10.36
+[CNN]   ep= 2400  recent=10.36  best=10.36
+
+[train_single] Training done in 393.7 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.36±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p12_cnn.pth

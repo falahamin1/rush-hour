@@ -1,0 +1,15 @@
+[task 62] difficulty=15  puzzle_idx=12  method=vrep  episodes=2500
+[train_single] difficulty=15  puzzle_idx=12  method=vrep  episodes=2500
+[train_single] board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[V-rep] device=cpu  board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[V-rep] Resumed from checkpoint at ep=1826  best=10.36
+[V-rep] ep= 1900  recent=10.36  best=10.36
+[V-rep] ep= 2000  recent=10.36  best=10.36
+[V-rep] ep= 2100  recent=10.36  best=10.36
+[V-rep] ep= 2200  recent=10.36  best=10.36
+[V-rep] ep= 2300  recent=10.36  best=10.36
+[V-rep] ep= 2400  recent=10.36  best=10.36
+
+[train_single] Training done in 427.6 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.36±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p12_vrep.pth

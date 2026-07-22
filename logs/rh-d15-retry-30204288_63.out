@@ -1,0 +1,11 @@
+[task 63] difficulty=15  puzzle_idx=12  method=gnn  episodes=2500
+[train_single] difficulty=15  puzzle_idx=12  method=gnn  episodes=2500
+[train_single] board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[GNN] device=cpu  board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[GNN] Resumed from checkpoint at ep=2226  best=10.36
+[GNN]   ep= 2300  recent=10.33  best=10.36
+[GNN]   ep= 2400  recent=10.33  best=10.36
+
+[train_single] Training done in 139.7 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.36±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p12_gnn.pth

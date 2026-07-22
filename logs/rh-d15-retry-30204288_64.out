@@ -1,0 +1,9 @@
+[task 64] difficulty=15  puzzle_idx=12  method=mlp  episodes=2500
+[train_single] difficulty=15  puzzle_idx=12  method=mlp  episodes=2500
+[train_single] board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[MLP] device=cpu  board=BBCCLoIoDDLxIoJAAMFFJKoMoooKGGHHoooo
+[MLP] Resumed from checkpoint at ep=2401  best=10.36
+
+[train_single] Training done in 52.9 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=10.36±0.00
+[train_single] Policy saved → /projects/amfa5003/rush-hour/policies/d15_p12_mlp.pth
