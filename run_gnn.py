@@ -39,7 +39,7 @@ def _load_puzzle(max_moves=10):
     return DEFAULT_BOARD
 
 
-def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None):
+def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None, on_checkpoint=None):
     if board_str is None:
         board_str = _load_puzzle()
 
@@ -136,6 +136,7 @@ def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None):
         data_h   = h_buf.get()
         data_adj = adj_buf.get()
         idx = np.arange(HP["steps_per_rollout"])
+        entropy_vals = []
 
         for _ in range(HP["ppo_epochs"]):
             np.random.shuffle(idx)
@@ -152,6 +153,7 @@ def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None):
                 dist = Categorical(logits=logits)
                 new_lp  = dist.log_prob(mb_a)
                 entropy = dist.entropy().mean()
+                entropy_vals.append(entropy.item())
 
                 ratio  = torch.exp(new_lp - mb_lp)
                 surr1  = ratio * mb_adv
@@ -167,11 +169,15 @@ def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None):
 
         h_buf.clear()
         adj_buf.clear()
+        last_entropy = float(np.mean(entropy_vals))
 
-        if checkpoint_path and (ep % 25 == 0 or ep == episodes - 1):
+        checkpoint_due = (ep % 25 == 0 or ep == episodes - 1)
+        if checkpoint_path and checkpoint_due:
             save_checkpoint(checkpoint_path, model=model, optimizer=optimizer, episode=ep,
                              best_weights=best_weights, best_moving_avg=best_moving_avg,
                              reward_history=reward_history)
+        if on_checkpoint is not None and checkpoint_due:
+            on_checkpoint(ep, last_entropy, model, HP)
 
         if ep % 100 == 0:
             recent = np.mean(reward_history[-10:]) if reward_history else 0
@@ -181,7 +187,7 @@ def train_graph_rep(board_str=None, episodes=1000, checkpoint_path=None):
 
     best_model = GNNActorCritic(node_dim=3, hidden_dim=128, num_actions=NUM_ACTIONS)
     best_model.load_state_dict(best_weights)
-    return model, best_model
+    return model, best_model, HP
 
 
 if __name__ == '__main__':
